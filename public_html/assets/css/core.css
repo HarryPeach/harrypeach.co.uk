@@ -19,9 +19,13 @@ html{
 }
 
 .header{
-    height: 50%;
+    height: 60%;
     color: white;
     text-align: center;
+}
+
+.padded{
+    padding: 50px 0 50px 0;
 }
 
 .panel{
@@ -45,7 +49,7 @@ html{
     padding: 20px 0 0 0;
 }
 
-.titlelink a{
+.titlebar a{
     color: white;
     text-decoration: none;
 }
@@ -77,6 +81,10 @@ html{
     text-align: center;
     font-size: 1.6em;
     font-weight: 300;
+}
+
+#sub{
+    font-size: 0.8em;
 }
 
 #subtitle{

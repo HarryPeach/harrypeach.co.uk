@@ -7,11 +7,19 @@ html, body{
 
 html{
     /* background: url("../img/background.jpg") no-repeat center center fixed; */
-    background: #ebb;
+    background: #e54e4e;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+a{
+    transition: color .2s;
+}
+
+a:hover{
+    color: #222;
 }
 
 .footer{
@@ -23,6 +31,7 @@ html{
 .header{
     height: 60%;
     text-align: center;
+    cursor: pointer;
 }
 
 .padded{
@@ -53,11 +62,10 @@ html{
 .titlebar a{
     color: white;
     text-decoration: none;
-    transition: color .2s;
 }
 
 .titlebar a:hover{
-    color: #1361dd;
+    color: #222;
     /* font-weight: bold; */
 }
 
@@ -72,7 +80,7 @@ html{
 }
 
 #h1{
-    font-size: 2em;
+    font-size: 3em;
 }
 
 #h2{

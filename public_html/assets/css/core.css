@@ -2,10 +2,12 @@ html, body{
     width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 html{
-    background: url("../img/background.jpg") no-repeat center center fixed;
+    /* background: url("../img/background.jpg") no-repeat center center fixed; */
+    background: #ebb;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -20,7 +22,6 @@ html{
 
 .header{
     height: 60%;
-    color: white;
     text-align: center;
 }
 
@@ -41,22 +42,23 @@ html{
 
 .titlebar{
     height: auto;
-    color: white;
 }
 
 .titlelink{
     text-align: center;
     padding: 20px 0 0 0;
+    font-size: 1.1em;
 }
 
 .titlebar a{
     color: white;
     text-decoration: none;
+    transition: color .2s;
 }
 
-.titlelink a:hover{
-    color: white;
-    font-weight: bold;
+.titlebar a:hover{
+    color: #1361dd;
+    /* font-weight: bold; */
 }
 
 .vertical-align{
@@ -78,7 +80,6 @@ html{
 }
 
 #panel-title{
-    text-align: center;
     font-size: 1.6em;
     font-weight: 300;
 }

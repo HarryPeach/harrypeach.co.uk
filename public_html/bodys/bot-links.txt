@@ -1,0 +1,9 @@
+Rule34, Patchnotes
+  - https://github.com/Just-Some-Bots/MusicBot/commit/29258f5e5d1943005cce700d96481925aca48821
+  
+Deafen Ted
+  - https://github.com/Just-Some-Bots/MusicBot/commit/f78d91d00be1aaa17d2979355d084cfe3dac5d63
+
+Color, cuss filter
+  - https://github.com/Just-Some-Bots/MusicBot/compare/master...eduardog3000:master
+  

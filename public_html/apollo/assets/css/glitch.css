@@ -1,0 +1,161 @@
+/* 
+  MIXIN(S)
+  =================
+ /chriscoyier/pen/FwJux
+
+
+  (TEXT) PARAMS
+  =================
+  1. Namespace
+  2. Intensity
+  3. Text color
+  4. Background color (flat)
+  5. Highlight #1 color
+  6. Highlight #2 color
+  7. Width (px)
+  8. Height (px)
+*/
+.example-one {
+  font-size: 100px;
+  color: white;
+  position: relative;
+}
+@keyframes example-one-anim-1 {
+  0% {
+    clip: rect(36px, 450px, 15px, 0);
+  }
+  5.88235% {
+    clip: rect(7px, 450px, 69px, 0);
+  }
+  11.76471% {
+    clip: rect(47px, 450px, 87px, 0);
+  }
+  17.64706% {
+    clip: rect(62px, 450px, 73px, 0);
+  }
+  23.52941% {
+    clip: rect(10px, 450px, 77px, 0);
+  }
+  29.41176% {
+    clip: rect(96px, 450px, 62px, 0);
+  }
+  35.29412% {
+    clip: rect(85px, 450px, 6px, 0);
+  }
+  41.17647% {
+    clip: rect(99px, 450px, 16px, 0);
+  }
+  47.05882% {
+    clip: rect(6px, 450px, 90px, 0);
+  }
+  52.94118% {
+    clip: rect(70px, 450px, 74px, 0);
+  }
+  58.82353% {
+    clip: rect(33px, 450px, 80px, 0);
+  }
+  64.70588% {
+    clip: rect(32px, 450px, 64px, 0);
+  }
+  70.58824% {
+    clip: rect(66px, 450px, 75px, 0);
+  }
+  76.47059% {
+    clip: rect(99px, 450px, 22px, 0);
+  }
+  82.35294% {
+    clip: rect(38px, 450px, 81px, 0);
+  }
+  88.23529% {
+    clip: rect(90px, 450px, 58px, 0);
+  }
+  94.11765% {
+    clip: rect(23px, 450px, 44px, 0);
+  }
+  100% {
+    clip: rect(31px, 450px, 9px, 0);
+  }
+}
+@keyframes example-one-anim-2 {
+  0% {
+    clip: rect(43px, 450px, 5px, 0);
+  }
+  5.88235% {
+    clip: rect(101px, 450px, 99px, 0);
+  }
+  11.76471% {
+    clip: rect(64px, 450px, 88px, 0);
+  }
+  17.64706% {
+    clip: rect(69px, 450px, 14px, 0);
+  }
+  23.52941% {
+    clip: rect(69px, 450px, 112px, 0);
+  }
+  29.41176% {
+    clip: rect(68px, 450px, 9px, 0);
+  }
+  35.29412% {
+    clip: rect(5px, 450px, 57px, 0);
+  }
+  41.17647% {
+    clip: rect(105px, 450px, 19px, 0);
+  }
+  47.05882% {
+    clip: rect(71px, 450px, 50px, 0);
+  }
+  52.94118% {
+    clip: rect(103px, 450px, 65px, 0);
+  }
+  58.82353% {
+    clip: rect(5px, 450px, 4px, 0);
+  }
+  64.70588% {
+    clip: rect(96px, 450px, 79px, 0);
+  }
+  70.58824% {
+    clip: rect(103px, 450px, 50px, 0);
+  }
+  76.47059% {
+    clip: rect(48px, 450px, 103px, 0);
+  }
+  82.35294% {
+    clip: rect(31px, 450px, 101px, 0);
+  }
+  88.23529% {
+    clip: rect(99px, 450px, 63px, 0);
+  }
+  94.11765% {
+    clip: rect(70px, 450px, 60px, 0);
+  }
+  100% {
+    clip: rect(113px, 450px, 103px, 0);
+  }
+}
+.example-one:before, .example-one:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  clip: rect(0, 0, 0, 0);
+}
+.example-one:after {
+  left: 2px;
+  text-shadow: -1px 0 red;
+  animation: example-one-anim-1 2s infinite linear alternate-reverse;
+}
+.example-one:before {
+  left: -2px;
+  text-shadow: 2px 0 blue;
+  animation: example-one-anim-2 3s infinite linear alternate-reverse;
+}
+
+.wrap {
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}

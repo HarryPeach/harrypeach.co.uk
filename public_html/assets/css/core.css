@@ -12,6 +12,12 @@ html{
     background-size: cover;
 }
 
+.footer{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
 .header{
     height: 50%;
     color: white;
@@ -19,9 +25,14 @@ html{
 }
 
 .panel{
-    padding: 20px 10% 20px 10%;
+    padding: 60px 10% 60px 10%;
     color: white;
     background-color: #222;
+}
+
+.panel.inverse{
+    background-color: white;
+    color: black;
 }
 
 .titlebar{

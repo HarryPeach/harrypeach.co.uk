@@ -1,0 +1,73 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    background: url("../img/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header{
+    height: 50%;
+    color: white;
+    text-align: center;
+}
+
+.panel{
+    padding: 20px 10% 20px 10%;
+    color: white;
+    background-color: #222;
+}
+
+.titlebar{
+    height: auto;
+    color: white;
+}
+
+.titlelink{
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.titlelink a{
+    color: white;
+    text-decoration: none;
+}
+
+.titlelink a:hover{
+    color: white;
+    font-weight: bold;
+}
+
+.vertical-align{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#br{
+    padding: 10px 0 0 0;
+}
+
+#h1{
+    font-size: 2em;
+}
+
+#h2{
+    font-size: 1.4em;
+}
+
+#panel-title{
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+#subtitle{
+    padding: 10px;
+}

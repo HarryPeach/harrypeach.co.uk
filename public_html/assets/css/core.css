@@ -1,26 +1,12 @@
-html, body{
-    width: 100%;
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
+/*
+    core.css
+    Copyright (c) 2018 Harry Peach
+*/
 
-html{
-    /* background: url("../img/background.jpg") no-repeat center center fixed; */
-    background: #e54e4e;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
-*.unselectable{
-    -moz-user-select: none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
-}
+/*
+    Default Tags
+*/
 
 a{
     transition: color .2s;
@@ -29,6 +15,22 @@ a{
 a:hover{
     color: #222;
 }
+
+html{
+    background: #e54e4e;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+
+/*
+    Classes
+*/
 
 .footer{
     color: white;
@@ -61,12 +63,6 @@ a:hover{
     height: auto;
 }
 
-.titlelink{
-    text-align: center;
-    padding: 20px 0 0 0;
-    font-size: 1.1em;
-}
-
 .titlebar a{
     color: white;
     text-decoration: none;
@@ -74,7 +70,12 @@ a:hover{
 
 .titlebar a:hover{
     color: #222;
-    /* font-weight: bold; */
+}
+
+.titlelink{
+    text-align: center;
+    padding: 20px 0 0 0;
+    font-size: 1.1em;
 }
 
 .vertical-align{
@@ -82,6 +83,11 @@ a:hover{
     top: 50%;
     transform: translateY(-50%);
 }
+
+
+/*
+    ID's
+*/
 
 #br{
     padding: 10px 0 0 0;
@@ -106,4 +112,17 @@ a:hover{
 
 #subtitle{
     padding: 10px;
+}
+
+
+/*
+    Wildcards
+*/
+
+*.unselectable{
+    -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
 }

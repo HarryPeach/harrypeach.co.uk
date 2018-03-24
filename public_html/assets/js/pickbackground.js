@@ -1,3 +1,8 @@
+/*
+ * pickbackground.js
+ * Changes the background color when called
+ * Copyright (c) Harry Peach 2018
+ */
 function changeBackground(){
     var items = Array("#ebb", "#96b6ea", "#8ae291", "#e0ae79", "#e54e4e");
     var item = items[Math.floor(Math.random()*items.length)];

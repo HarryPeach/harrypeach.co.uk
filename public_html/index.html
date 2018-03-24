@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0="
     crossorigin="anonymous" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
 <link rel="stylesheet" type="text/css" href="assets/css/cssreset.css">
 <link rel="stylesheet" type="text/css" href="assets/css/core.css">
 
@@ -19,16 +21,16 @@
     <div class="container">
         <div class="row">
             <div class="titlelink three columns animated fadeInDown">
-                <a href="#">Projects</a>
+                <a href="#projects-panel">Projects</a>
             </div>
             <div class="titlelink three columns animated fadeInDown">
-                <a href="#">Skills</a>
+                <a href="#skills-panel">Skills</a>
             </div>
             <div class="titlelink three columns animated fadeInDown">
-                <a href="#">Awards</a>
+                <a href="#awards-panel">Awards</a>
             </div>
             <div class="titlelink three columns animated fadeInDown">
-                <a href="#">Contact</a>
+                <a href="#contact-panel">Contact</a>
             </div>
         </div>
     </div>
@@ -41,7 +43,7 @@
     </div>
 </section>
 
-<section class="panel inverse">
+<section class="panel inverse" id="projects-panel">
     <div class="row animated fadeIn">
         <h1 id="panel-title">Projects</h1>
         <div class="six columns padded">
@@ -90,7 +92,7 @@
     </div>
 </section>
 
-<section class="panel">
+<section class="panel" id="skills-panel">
     <div class="row animated fadeIn">
         <h1 id="panel-title">Skills</h1>
         <div class="six columns padded">
@@ -110,7 +112,7 @@
     </div>
 </section>
 
-<section class="panel inverse">
+<section class="panel inverse" id="awards-panel">
     <div class="row animated fadeIn">
         <h1 id="panel-title">Awards and Qualifications</h1>
         <div class="six columns padded">
@@ -136,7 +138,7 @@
     </div>
 </section>
 
-<section class="panel">
+<section class="panel" id="contact-panel">
     <div class="row animated fadeIn">
         <h1 id="panel-title">Contact</h1>
         <div class="2 columns padded">
@@ -155,3 +157,4 @@
 </section>
 
 <script src="assets/js/pickbackground.js"></script>
+<script src="assets/js/scroll.js"></script>

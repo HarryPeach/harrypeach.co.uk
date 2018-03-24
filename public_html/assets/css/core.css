@@ -27,10 +27,18 @@ html, body{
     color: white;
 }
 
+input{
+    border-radius: 0;
+}
+
 
 /*
     Classes
 */
+
+.contact-form *{
+    width: 100%;
+}
 
 .footer{
     color: white;

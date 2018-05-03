@@ -3,7 +3,7 @@ services:
   webapps:
     build: .
     ports:
-      - 80:80
+      - 1337:80
   #   links:
   #     - "mariadb"
 

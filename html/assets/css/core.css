@@ -40,15 +40,50 @@ h1{
     cursor: pointer;
     text-decoration: none;
     color: white;
+    transition: opacity .2s;
 }
 
 .white-link:hover {
-    color: #0FA0CE; }
+    opacity: 0.5;
+}
 
 /* Forms
 -------------------*/
 #login-form {
     color: black;
+}
+
+.login-input-text{
+    border: 0;
+    padding: 2px;
+    min-height: 30px;
+    border-radius: 1px;
+    width: 100%;
+    transition: box-shadow .2s;
+}
+
+.login-input-text:focus{
+    box-shadow: inset 2px 3px #bbb;
+}
+
+.login-input-button{
+    border: 0;
+    padding: 8px;
+    border-radius: 2px;
+    background: #fff;
+    width: 100px;
+    transition: box-shadow .2s;
+}
+
+.login-input-button:hover{
+    box-shadow: 4px 4px #1565c0;
+    /* width: 200px; */
+}
+
+.login-input-button:active{
+    box-shadow: inset 4px 4px #bbb;
+    background: #ccc;
+    /* width: 200px; */
 }
 
 /* Debug

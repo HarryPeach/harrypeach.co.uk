@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
 <link rel="stylesheet" type="text/css" href="assets/css/skeleton.css">
 <link rel="stylesheet" type="text/css" href="assets/css/core.css">
+<link rel="manifest" href="assets/pwa/manifest.json">
 
 <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
@@ -16,19 +17,19 @@
 
 <div class="container center-vertical" onload="renderHome()">
     <div class="row">
-        <div class="six columns" id="root"></div>
+        <div class="eight columns" id="root"></div>
     </div>
     <div class="row">
-        <div class="one column">
+        <div class="two columns">
             <span class="white-link" onClick="renderRoot(0)">Home</span>
         </div>
-        <div class="one column">
+        <div class="two columns">
             <span class="white-link" onClick="renderRoot(1)">Projects</span>
         </div>
-        <div class="one column">
+        <div class="two columns">
             <span class="white-link" onClick="renderRoot(2)">Research</span>
         </div>
-        <div class="one column">
+        <div class="two columns">
             <span class="white-link" onClick="renderRoot(3)">Login</span>
         </div>
     </div>

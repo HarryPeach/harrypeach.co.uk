@@ -14,25 +14,92 @@
 <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
-<div class="container center-vertical">
+<div class="container center-vertical" onload="renderHome()">
     <div class="row">
-        <div class="four columns">
-            <h1>hey.</h1>
-            <p>Voluptate eu reprehenderit deserunt laborum non aute occaecat incididunt.</p>
-        </div>
+        <div class="six columns" id="root"></div>
     </div>
     <div class="row">
         <div class="one column">
-            <a href="" class="white-link">Home</a>
+            <span class="white-link" onClick="renderRoot(0)">Home</span>
         </div>
         <div class="one column">
-            <a href="" class="white-link">Login</a>
+            <span class="white-link" onClick="renderRoot(1)">Projects</span>
         </div>
         <div class="one column">
-            <a href="" class="white-link">Projects</a>
+            <span class="white-link" onClick="renderRoot(2)">Research</span>
         </div>
         <div class="one column">
-            <a href="" class="white-link">Research</a>
+            <span class="white-link" onClick="renderRoot(3)">Login</span>
         </div>
     </div>
 </div>
+<script type="text/babel">
+class Home extends React.Component {
+    render() {
+        return (
+            <div>
+                <h1>hey.</h1>
+                <p>Voluptate eu reprehenderit deserunt laborum non aute occaecat incididunt.</p>
+            </div>
+        )
+    }
+}
+class Login extends React.Component {
+    render() {
+        return (
+            <div>
+                <h1>login.</h1>
+                <form id="login-form" action="" method="post">
+                    <input type="text" placeholder="Username" name="username" required />
+                    <br />
+                    <input type="password" placeholder="Password" name="password" required />
+                    <br />
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        )
+    }
+}
+class Projects extends React.Component {
+    render() {
+        return (
+            <div>
+                <h1>projects.</h1>
+                <p>Ipsum qui consectetur esse ullamco.</p>
+            </div>
+        )
+    }
+}
+class Research extends React.Component {
+    render() {
+        return (
+            <div>
+                <h1>research.</h1>
+                <p>Ipsum qui consectetur esse ullamco. Ipsum qui consectetur esse ullamco. Ipsum qui consectetur esse ullamco.</p>
+            </div>
+        )
+    }
+}
+function renderRoot(item) {
+    var element;
+    switch(item){
+        case 0:
+            element = <Home />;
+            break;
+        case 1:
+            element = <Projects />;
+            break;
+        case 2:
+            element = <Research />;
+            break;
+        case 3:
+            element = <Login />;
+            break;
+
+    }
+    ReactDOM.render(
+        element,
+        document.getElementById('root')
+    );
+}
+</script>

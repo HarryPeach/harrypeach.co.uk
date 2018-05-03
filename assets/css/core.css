@@ -1,3 +1,6 @@
+/* General Styles
+-------------------*/
+
 html, body {
     font-family: 'Lato', sans-serif;
     height: 100%;
@@ -6,16 +9,19 @@ html, body {
     width: 100%;
 }
 
-/* *{
-    outline-style: solid;
-    outline-width: 1px;
-    outline-color: red;
-} */
+/* Typography
+-------------------*/
 
 h1{
     font-weight: 700;
     font-size: 6em;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    line-height: 1.2;  letter-spacing: -.1rem;
 }
+
+/* Formatting
+-------------------*/
 
 .center-vertical{
     position: relative;
@@ -27,14 +33,20 @@ h1{
     text-align: center;
 }
 
-.white-link{
+/* Links
+-------------------*/
+
+.white-link {
     cursor: pointer;
     text-decoration: none;
     color: white;
 }
 
-.debug.red{
-    border-style: solid;
-    border-width: 1px;
-    border-color: red;
+.white-link:hover {
+    color: #0FA0CE; }
+
+/* Forms
+-------------------*/
+#login-form {
+    color: black;
 }

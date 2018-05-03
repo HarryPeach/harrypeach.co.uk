@@ -53,8 +53,8 @@ h1{
 
 /* Debug
 -------------------*/
-*{
+/* *{
     outline-style: solid;
     outline-width: 1px;
     outline-color: red;
-}
+} */

@@ -1,0 +1,40 @@
+html, body {
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+    background: #2196F3;
+    color: white;
+    width: 100%;
+}
+
+/* *{
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: red;
+} */
+
+h1{
+    font-weight: 700;
+    font-size: 6em;
+}
+
+.center-vertical{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.center-horizontal{
+    text-align: center;
+}
+
+.white-link{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.debug.red{
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+}

@@ -1,1 +1,4 @@
 /* A retro-hacker theme for the webpage */
+html, body {
+    background: red;
+}

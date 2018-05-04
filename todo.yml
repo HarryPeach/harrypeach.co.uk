@@ -10,6 +10,7 @@ Log in page:
     - Handle form from index page
 Animations:
   - Transition size when changing between index sections
+  - Animation reveal of settings modal
 Index page:
   - Find a category to replace "Research"
   - Fill project placeholder
@@ -17,9 +18,5 @@ Index page:
   Theming:
     - Create a switch to change between themes (perhaps a settings button at top right?)
     - Create different theme css files to switch between
-    - Find a way to hot-switch css files and load them
-Email:
-  - Set up MX records
-  - Set up email forwarding server
-Misc:
-! - Change placeholder "under maintenance" page
+    - Change placeholder settings icon
+    - "Switch code:" document.getElementById('theme').href='assets/css/overlays/retro.css'

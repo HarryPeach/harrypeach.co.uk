@@ -1,0 +1,23 @@
+# To Do
+# harrypeach.co.uk
+% dont know what this does
+Log in page:
+  Design:
+    - Log in dashboard
+  Backend:
+    - Create login script
+    - Setup database
+    - Handle form from index page
+Animations:
+  - Transition size when changing between index sections
+Index page:
+  - Find a category to replace "Research"
+  - Fill project placeholder
+  - Change home text
+  Theming:
+    - Create a switch to change between themes (perhaps a settings button at top right?)
+    - Create different theme css files to switch between
+    - Find a way to hot-switch css files and load them
+Email:
+  - Set up MX records
+  - Set up email forwarding server

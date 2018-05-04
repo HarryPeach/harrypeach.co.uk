@@ -33,6 +33,16 @@ h1{
     text-align: center;
 }
 
+.footer{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+#footer-contact-text{
+    font-size: 10px;
+}
+
 /* Links
 -------------------*/
 
@@ -77,13 +87,11 @@ h1{
 
 .login-input-button:hover{
     box-shadow: 4px 4px #1565c0;
-    /* width: 200px; */
 }
 
 .login-input-button:active{
     box-shadow: inset 4px 4px #bbb;
     background: #ccc;
-    /* width: 200px; */
 }
 
 /* Debug

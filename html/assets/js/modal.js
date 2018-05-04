@@ -3,15 +3,16 @@ var btn = document.getElementById("modal-settings-icon");
 var span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function () {
+    modal.className = "modal show";
     modal.style.display = "block";
 }
 
-span.onclick = function () {
-    modal.style.display = "none";
-}
+// span.onclick = function () {
+//     modal.className = "modal hide";
+// }
 
 window.onclick = function (event) {
     if (event.target == modal) {
-        modal.style.display = "none";
+        modal.className = "modal hide";
     }
 }

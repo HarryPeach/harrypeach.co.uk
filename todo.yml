@@ -17,6 +17,5 @@ Index page:
   - Change home text
   Theming:
     - Create a switch to change between themes (perhaps a settings button at top right?)
-    - Create different theme css files to switch between
-    - Change placeholder settings icon
-    - "Switch code:" document.getElementById('theme').href='assets/css/overlays/retro.css'
+    - Create more different theme css files to switch between
+    - Change placeholder settings icon to font icon so color can be changed

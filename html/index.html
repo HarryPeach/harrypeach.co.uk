@@ -22,7 +22,11 @@
     <div class="modal-content">
         <span class="close">&times;</span>
         <h2>Settings</h2>
-        <p>Some text in the Modal..</p>
+        <p>Settings should go here</p>
+        <hr>
+        <h3>Debug Toggles</h3>
+        <button onclick="document.getElementById('theme').href='assets/css/overlays/default.css'">Switch to Default Theme (DEBUG)</button>
+        <button onclick="document.getElementById('theme').href='assets/css/overlays/retro.css'">Switch to Retro Theme (DEBUG)</button>
     </div>
 </div>
 
@@ -55,7 +59,7 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <h1>hey.</h1>
+                <h1 id="title">hey.</h1>
                 <p>Welcome to the preview of my website. Some features may not be functional yet, but feel free to look around.</p>
             </div>
         )
@@ -65,7 +69,7 @@ class Login extends React.Component {
     render() {
         return (
             <div>
-                <h1>login.</h1>
+                <h1 id="title">login.</h1>
                 <form id="login-form" action="" method="post">
                     <input type="text" placeholder="Username" name="username" class="login-input-text" required />
                     <br />
@@ -81,7 +85,7 @@ class Projects extends React.Component {
     render() {
         return (
             <div>
-                <h1>projects.</h1>
+                <h1 id="title">projects.</h1>
                 <p>Ipsum qui consectetur esse ullamco.</p>
             </div>
         )
@@ -91,7 +95,7 @@ class Research extends React.Component {
     render() {
         return (
             <div>
-                <h1>research.</h1>
+                <h1 id="title">research.</h1>
                 <p>Ipsum qui consectetur esse ullamco. Ipsum qui consectetur esse ullamco. Ipsum qui consectetur esse ullamco.</p>
             </div>
         )

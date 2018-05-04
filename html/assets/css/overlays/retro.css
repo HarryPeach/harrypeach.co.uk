@@ -1,4 +1,17 @@
 /* A retro-hacker theme for the webpage */
 html, body {
-    background: red;
+    background: black;
+    font-family: monospace;
+    color: #00ff00;
+}
+
+.login-input-button{
+    border-radius: 0;
+    background: #fff;
+    width: 100px;
+    transition: none;
+}
+
+.login-input-button:hover{
+    box-shadow: none;
 }

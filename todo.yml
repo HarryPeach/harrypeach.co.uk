@@ -1,6 +1,6 @@
 # To Do
 # harrypeach.co.uk
-% dont know what this does
+
 Log in page:
   Design:
     - Log in dashboard
@@ -10,7 +10,6 @@ Log in page:
     - Handle form from index page
 Animations:
   - Transition size when changing between index sections
-  - Animation reveal of settings modal
 Index page:
   - Find a category to replace "Research"
   - Fill project placeholder

@@ -5,13 +5,13 @@ html, body {
     color: #00ff00;
 }
 
-.login-input-button{
+.styled-button{
     border-radius: 0;
     background: #fff;
     width: 100px;
     transition: none;
 }
 
-.login-input-button:hover{
+.styled-button:hover{
     box-shadow: none;
 }

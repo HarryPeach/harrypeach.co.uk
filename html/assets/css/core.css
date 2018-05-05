@@ -74,7 +74,7 @@ h1{
     box-shadow: inset 2px 3px #bbb;
 }
 
-.login-input-button{
+.styled-button{
     border: 0;
     padding: 8px;
     border-radius: 2px;
@@ -83,11 +83,11 @@ h1{
     transition: box-shadow .2s;
 }
 
-.login-input-button:hover{
+.styled-button:hover{
     box-shadow: 4px 4px #1565c0;
 }
 
-.login-input-button:active{
+.styled-button:active{
     box-shadow: inset 4px 4px #bbb;
     background: #ccc;
 }

@@ -15,6 +15,5 @@ Index page:
   - Fill project placeholder
   - Change home text
   Theming:
-    - Create a switch to change between themes (perhaps a settings button at top right?)
-    - Create more different theme css files to switch between
     - Change placeholder settings icon to font icon so color can be changed
+    - Cookies to remember theme when you leave the page

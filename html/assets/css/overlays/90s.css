@@ -1,0 +1,31 @@
+/* A 90s theme for the webpage */
+html, body {
+    background: url("../../../assets/img/stars.gif");
+    font-family: serif;
+    color: white;
+}
+
+.styled-button {
+    background: #e3e3e3;
+    background-image: -webkit-linear-gradient(top, #e3e3e3, #c2c2c2);
+    background-image: -moz-linear-gradient(top, #e3e3e3, #c2c2c2);
+    background-image: -ms-linear-gradient(top, #e3e3e3, #c2c2c2);
+    background-image: -o-linear-gradient(top, #e3e3e3, #c2c2c2);
+    background-image: linear-gradient(to bottom, #e3e3e3, #c2c2c2);
+    font-family: Arial;
+    color: #000000;
+    font-size: 15px;
+    padding: 6px 10px 6px 10px;
+    border: solid #808080 1px;
+    text-decoration: none;
+    transition: none;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+.styled-button:hover{
+    box-shadow: none;
+    background: #c0c1c2;
+    text-decoration: none;
+}

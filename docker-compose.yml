@@ -4,17 +4,35 @@ services:
     build: .
     ports:
       - 1337:80
-  #   links:
-  #     - "mariadb"
+    links:
+      - "mariadb"
 
-  # mariadb:
-  #   image: mariadb
-  #   restart: always
-  #   env_file:
-  #     - env/mysql_vars.env
+  mariadb:
+    image: mariadb
+    restart: always
+    env_file:
+      - env/mysql_vars.env
+    # environment:
+      # - MYSQL_ROOT_PASSWORD:example
+    volumes:
+      - ./data/db:/var/lib/mysql
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      # just if you also want to access it directly from you host
+      # node neede for phpmyadmin
+      - "3306:3306"
 
-  # adminer:
-  #   image: adminer
-  #   restart: always
-  #   ports:
-  #     - 8080:8080
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    depends_on:
+      - mariadb
+    links:
+      - mariadb
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=db
+    ports:
+      - "8080:80"
+
+volumes:
+  database-datavolume:

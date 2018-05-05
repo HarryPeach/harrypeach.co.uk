@@ -7,10 +7,13 @@
     $user_input = $_POST["user"];
     $password_input = $_POST["pass"];
 
-    // Create connection
+    if(!isset($user_input) || !isset($password_input)){
+        echo "Please provide a username and password";
+        die;
+    }
+
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
@@ -30,7 +33,6 @@
                     echo "password not verified";
                 }
             }
-            echo "Name: " . $row["username"]. " " . $row["password"]. "<br>";
         }
     } else {
         echo "0 results";

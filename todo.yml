@@ -6,11 +6,12 @@ Log in page:
     - Log in dashboard
   Backend:
     - Create login script
-    - Setup database
-    - Handle form from index page
+    - Use sessions
+!   - Sanitise SQL inputs
 Animations:
   - Transition size when changing between index sections
 Index page:
   - Find a category to replace "Research"
   - Fill project placeholder
   - Change home text
+  - EU Cookie warning

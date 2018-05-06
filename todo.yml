@@ -6,8 +6,6 @@ Log in page:
     - Log in dashboard
   Backend:
     - Create login script
-    - Use sessions
-!   - Sanitise SQL inputs
 Animations:
   - Transition size when changing between index sections
 Index page:

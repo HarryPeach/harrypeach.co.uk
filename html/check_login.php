@@ -16,6 +16,3 @@ if ($conn->connect_error) {
 $sql = "SELECT username, first_name, last_name, email FROM users WHERE username='" . $_SESSION["current_user"] . "'";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
-echo $row["first_name"];
-echo $row["last_name"];
-echo $row["email"];

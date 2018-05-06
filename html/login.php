@@ -24,10 +24,12 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         if($row["username"] == $user_input){
             if(password_verify($password_input, $row["password"])){
-                echo "password verified from database";
+                echo "password verified from database, you will be redirected.";
                 $_SESSION['current_user']= $row["username"];
+                header('Location: ' . "dashboard.php");
+                die();
             }else{
-                echo "password not verified";
+                echo "password not verified"; // ERROR - Incorrect password
             }
         }
     }
@@ -35,4 +37,3 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 $conn->close();
-?>

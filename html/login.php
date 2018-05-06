@@ -22,7 +22,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        if($row["username"] == $user_input){
+        if(strtolower($row["username"]) == strtolower($user_input)){
             if(password_verify($password_input, $row["password"])){
                 echo "password verified from database, you will be redirected.";
                 $_SESSION['current_user']= $row["username"];

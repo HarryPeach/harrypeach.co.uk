@@ -1,4 +1,4 @@
 <?php
-unset($_SESSION["current_user"])
+unset($_SESSION["current_user"]);
 header('Location: ' . "index.html");
 die();

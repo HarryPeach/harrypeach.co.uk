@@ -35,7 +35,15 @@
 </div>
 
 <i class="material-icons" id="modal-settings-icon">settings</i>
+<?php
 
+if (isset($_POST["err_msg"])){
+    echo "<div class=\"container error-message\">";
+    echo $_POST["err_msg"];
+    echo "</div>";
+}
+
+?>
 <div class="container center-vertical">
     <div class="row">
         <div class="eight columns" id="root"></div>

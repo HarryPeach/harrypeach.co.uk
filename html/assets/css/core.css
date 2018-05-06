@@ -160,6 +160,15 @@ h1{
     0% { top: 0; opacity: 1; visibility: visible; }
     100% { top: -200px; opacity: 0; visibility: hidden;  }
   }
+
+.error-message{
+    padding: 20px;
+    background: #ff0044;
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Debug
 -------------------*/
 /* *{

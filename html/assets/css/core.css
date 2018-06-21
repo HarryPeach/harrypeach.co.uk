@@ -44,14 +44,14 @@ h1{
 /* Links
 -------------------*/
 
-.white-link {
+a, .white-link {
     cursor: pointer;
     text-decoration: none;
     color: white;
     transition: opacity .2s;
 }
 
-.white-link:hover {
+a, .white-link:hover {
     opacity: 0.5;
 }
 
@@ -164,9 +164,10 @@ h1{
 .error-message{
     padding: 20px;
     background: #ff0044;
-    position: static;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 /* Debug

@@ -52,7 +52,7 @@
             <span class="white-link" onClick="renderRoot(1)">Projects</span>
         </div>
         <div class="two columns">
-            <span class="white-link" onClick="renderRoot(2)">Research</span>
+            <span class="white-link" onClick="renderRoot(2)">Contact</span>
         </div>
         <div class="two columns">
             <span class="white-link" onClick="renderRoot(3)">Login</span>
@@ -60,7 +60,7 @@
     </div>
 </div>
 <div class="footer">
-    <span id="footer-contact-text">contact@harrypeach.co.uk</span>
+    <span id="footer-contact-text">harrypeach1999@gmail.com</span>
 </div>
 <script type="text/babel">
 class Home extends React.Component {
@@ -94,7 +94,7 @@ class Projects extends React.Component {
         return (
             <div>
                 <h1 id="title">projects.</h1>
-                <p>Ipsum qui consectetur esse ullamco.</p>
+                <p>A list of the projects that I have created or contributed to can be found <a href="projects.php">here.</a></p>
             </div>
         )
     }
@@ -103,8 +103,10 @@ class Research extends React.Component {
     render() {
         return (
             <div>
-                <h1 id="title">research.</h1>
-                <p>Ipsum qui consectetur esse ullamco. Ipsum qui consectetur esse ullamco. Ipsum qui consectetur esse ullamco.</p>
+                <h1 id="title">contact.</h1>
+                <p>You can mainly contact me through my <a href="mailto:harrypeach1999@gmail.com">email address</a> though some of my other outlets are available below.</p>
+                <span>Github: <a href="https://github.com/HarryPeach">HarryPeach</a></span><br />
+                <span>Google Play: <a href="https://play.google.com/store/apps/dev?id=8676751253730258901">Harry Peach</a></span><br /><br />
             </div>
         )
     }

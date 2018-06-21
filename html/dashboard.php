@@ -62,7 +62,7 @@ include("check_login.php");
     <span id="footer-contact-text">contact@harrypeach.co.uk</span>
 </div>
 <script type="text/babel">
-class Home extends React.Component {
+class Dashboard extends React.Component {
     render() {
         return (
             <div>
@@ -72,7 +72,7 @@ class Home extends React.Component {
         )
     }
 }
-class Login extends React.Component {
+class Paste extends React.Component {
     render() {
         return (
             <div>
@@ -88,7 +88,7 @@ class Login extends React.Component {
         )
     }
 }
-class Projects extends React.Component {
+class Mailer extends React.Component {
     render() {
         return (
             <div>
@@ -98,7 +98,7 @@ class Projects extends React.Component {
         )
     }
 }
-class Research extends React.Component {
+class Etc extends React.Component {
     render() {
         return (
             <div>
@@ -112,16 +112,16 @@ function renderRoot(item) {
     var element;
     switch(item){
         case 0:
-            element = <Home />;
+            element = <Dashboard />;
             break;
         case 1:
-            element = <Projects />;
+            element = <Paste />;
             break;
         case 2:
-            element = <Research />;
+            element = <Mailer />;
             break;
         case 3:
-            element = <Login />;
+            element = <Etc />;
             break;
 
     }

@@ -13,7 +13,26 @@
 <link href="assets/css/core.css" rel="stylesheet">
 
 <!-- JS -->
+<script src="assets/js/rellax.min.js" type="text/javascript"></script>
+
 
 <!-- Body -->
+<div class="background rellax">
+    &nbsp;
+</div>
 
-<h1>Harry Peach</h1>
+<div class="container">
+    <div class="section rellax" data-rellax-speed="3" data-rellax-zindex="1" style="background: red;">
+            This is a div to test the parallax capabilities.
+    </div>
+
+    <div class="section rellax" data-rellax-speed="3" data-rellax-zindex="1" style="background: red;">
+        This is a div to test the parallax capabilities.
+    </div>
+</div>
+
+<!-- Initialize Rellax -->
+<script>
+    // Accepts any class name
+    var rellax = new Rellax('.rellax');
+</script>

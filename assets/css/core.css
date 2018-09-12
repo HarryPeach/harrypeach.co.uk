@@ -30,12 +30,21 @@ html, body{
     background: none;
 }
 
+<<<<<<< HEAD
 .skew{
     background: #2cf9ae;
     transform: skewY(-5deg);
     padding: 100px 0 10px 0;
+=======
+.contain{
+    background: #2cf9ae;
+    transform: skewY(-5deg);
+>>>>>>> e96ef3cc9fec2363ced9f2ecf83e0958be55b8e7
 }
 
+.contain > .section{
+    transform: skewY(5deg);
+}
 /* IDs */
 #title {
     font-family: 'Source Sans Pro', sans-serif;

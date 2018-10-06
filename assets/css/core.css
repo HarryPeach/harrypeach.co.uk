@@ -1,10 +1,12 @@
 html {
 	font-family: 'Open Sans', sans-serif;
+	color: #fff;
 	background: url('/assets/img/background.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	font-size: 1.2em;
 }
 
 html, body{
@@ -13,17 +15,30 @@ html, body{
 
 h1{
 	font-size: 3em;
-	color: #fff;
+	padding: 10px;
+	white-space: nowrap;
+}
+
+h2{
+	font-size: 1.8em;
+	padding: 10px 0;
 }
 
 #cover{
-	position: block;
+	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 30%;
 	margin: auto;
 }
 
+#content{
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 10%;
+}
+
 #title{
+	text-align: center;
 	position: absolute;
 	top: 50%;
 	left: 50%;

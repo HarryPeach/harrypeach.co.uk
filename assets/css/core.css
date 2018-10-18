@@ -56,6 +56,11 @@ li:before {
     padding: 0 10%;
 }
 
+#footer{
+    font-family: monospace;
+    text-align: center;
+}
+
 #linksubtitle:link,
 #linksubtitle:visited,
 #linksubtitle:hover,

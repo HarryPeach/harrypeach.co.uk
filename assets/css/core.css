@@ -1,10 +1,24 @@
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: auto;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v15-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+         url('../fonts/open-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v15-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+
 @media (min-width: 30em) {
     .row { width: 100%; display: table; table-layout: fixed; }
     .col { display: table-cell; }
 }
 
 html {
-    font-family: 'Open Sans', sans-serif;
     color: #fff;
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)) no-repeat center center fixed, url('/assets/img/background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -76,14 +90,6 @@ li:before {
     text-align: center;
 }
 
-#linksubtitle:link,
-#linksubtitle:visited,
-#linksubtitle:hover,
-#linksubtitle:active {
-    text-decoration: none;
-    color: #fff;
-}
-
 #qualificationlist {
     padding-left: 60px;
 }
@@ -102,6 +108,14 @@ li:before {
 
 .category {
     margin: 20px 0;
+}
+
+.linksubtitle:link,
+.linksubtitle:visited,
+.linksubtitle:hover,
+.linksubtitle:active {
+    text-decoration: none;
+    color: #fff;
 }
 
 .subsection p{

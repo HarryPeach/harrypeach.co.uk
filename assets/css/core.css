@@ -118,8 +118,12 @@ li:before {
     color: #fff;
 }
 
+.subsection h3{
+    padding: 6px;
+}
+
 .subsection p{
-    padding: 20px;
+    padding: 10px;
     margin: 0 0 4px 0;
 }
 

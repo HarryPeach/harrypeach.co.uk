@@ -106,6 +106,10 @@ li:before {
     margin: 20px 0;
 }
 
+.subsection p{
+    padding: 20px;
+}
+
 .skillcategory {
     font-size: .8em;
     border-radius: 2px;

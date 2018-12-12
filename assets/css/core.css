@@ -1,3 +1,8 @@
+@media (min-width: 30em) {
+    .row { width: 100%; display: table; table-layout: fixed; }
+    .col { display: table-cell; }
+}
+
 html {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
@@ -29,6 +34,11 @@ h2 {
 h3 {
     font-size: 1.3em;
     padding: 10px;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid white;
 }
 
 li {
@@ -88,9 +98,9 @@ li:before {
     transform: translate(-50%, -50%);
 }
 
-.info {
+/* .info {
     margin-left: 20px;
-}
+} */
 
 .category {
     margin: 20px 0;

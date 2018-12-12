@@ -19,6 +19,11 @@ body {
     height: 100%;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 h1 {
     font-size: 3em;
     padding: 10px;
@@ -83,13 +88,6 @@ li:before {
     padding-left: 60px;
 }
 
-#subtitle{
-	display: block;
-	font-size: 0.8em;
-	padding-left: 12px;
-	margin-bottom: 14px;
-}
-
 #title {
     text-align: center;
     position: absolute;
@@ -108,6 +106,13 @@ li:before {
 
 .subsection p{
     padding: 20px;
+    margin: 0 0 4px 0;
+}
+
+.subtitle{
+	display: block;
+	font-size: 0.8em;
+    padding: 0 0 2px 0;
 }
 
 .skillcategory {

@@ -110,6 +110,10 @@ li:before {
     margin: 20px 0;
 }
 
+.infoline{
+    font-size: .8em;
+}
+
 .linksubtitle:link,
 .linksubtitle:visited,
 .linksubtitle:hover,

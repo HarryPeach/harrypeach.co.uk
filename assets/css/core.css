@@ -107,7 +107,11 @@ li:before {
 } */
 
 .category {
-    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.row {
+    padding: 10px 0;
 }
 
 .infoline{

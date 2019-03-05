@@ -19,45 +19,62 @@
 <body>
     <header>
         <h1>Harry Peach</h1>
-        <p>Computer Science student at <a href="https://ncl.ac.uk/">Newcastle University</a></p>
+        <p>Computer Science student at <a href="https://ncl.ac.uk/">Newcastle University</a>.</p>
+        <a href="https://github.com/HarryPeach" title="Visit my GitHub page" class="link-button"><i class="fab fa-github"></i></a>
+        <a href="https://https://gitlab.com/harrypeach1999" title="Visit my GitLab page" class="link-button"><i class="fab fa-gitlab"></i></a>
+        <a href="https://www.linkedin.com/in/harry-peach-a28893156/" title="Visit my LinkedIn page" class="link-button"><i class="fab fa-linkedin"></i></a>
     </header>
     <hr>
     <main>
         <section>
             <h2>Some of my projects</h2>
-            <div id="content">
+            <div class="content">
                 <h3>Ciph</h3>
                 <p>Ciph is an android app to generate secure and memorable passwords. Based on a <a href="https://xkcd.com/936/">famous xkcd comic</a>, passwords are generated from a pool of random words making them easier to remember and providing higher entropy than a traditional password.</p>
-                <a href="https://play.google.com/store/apps/details?id=ga.cphn.ciph" title="Download the app from the Play Store" id="link-button"><i class="fab fa-google-play">&nbsp;</i>Play Store</a>
-                <a href="https://gitlab.com/harrypeach1999/ciph" title="View the public issue tracker" id="link-button"><i class="fab fa-gitlab">&nbsp;</i>Issue Tracker</a>
+                <a href="https://play.google.com/store/apps/details?id=ga.cphn.ciph" title="Download the app from the Play Store" class="link-button"><i class="fab fa-google-play">&nbsp;</i>Play Store</a>
+                <a href="https://gitlab.com/harrypeach1999/ciph" title="View the public issue tracker" class="link-button"><i class="fab fa-gitlab">&nbsp;</i>Issue Tracker</a>
             </div>
-            <div id="content">
+            <div class="content">
                 <h3>bootscreenx</h3>
                 <p>A website to create boot images for the Nintendo Switch that resemble BIOS screens from early computers. Originally for the Nintendo 3DS but updated and maintained for the switch by me.</p>
-                <a href="https://github.com/HarryPeach/bootscreennx" title="View the source code on GitHub" id="link-button"><i class="fab fa-github">&nbsp;</i>Source</a>
-                <a href="https://harrypeach.github.io/bootscreennx/" title="View the project itself" id="link-button"><i class=""></i>Website</a>
+                <a href="https://harrypeach.github.io/bootscreennx/" title="View the project itself" class="link-button"><i class="fas fa-share-square">&nbsp;</i>Website</a>
+                <a href="https://github.com/HarryPeach/bootscreennx" title="View the source code on GitHub" class="link-button"><i class="fab fa-github">&nbsp;</i>Source</a>
             </div>
-            <div id="content">
+            <div class="content">
                 <h3>Skye Assistant</h3>
                 <p>Originally created for my A-level coursework; Skye Assistant is a voice controlled virtual assistant. I rewrote the project with the primary goal of making it more extensible and cleaning up the codebase.</p>
-                <a href="https://github.com/HarryPeach/skye" title="View the source code on GitHub" id="link-button"><i class="fab fa-github">&nbsp;</i>Source</a>
+                <a href="https://github.com/HarryPeach/skye" title="View the source code on GitHub" class="link-button"><i class="fab fa-github">&nbsp;</i>Source</a>
+            </div>
+            <div class="content">
+                <p>You can find most of my projects on my <a href="https://github.com/HarryPeach">GitHub</a> page</p>
             </div>
         </section>
         <section>
-            <h2>How to contact me</h2>
-            <div id="content">
-                <h3>Email</h3>
-                <p>harrypeach1999@gmail.com</p>
+            <h2>Other information</h2>
+            <div class="content" id="contact">
+                <h3>Contact me</h3>
+                <table>
+                    <tr id="contactMethod">
+                        <td>Email</td>
+                        <td>harrypeach1999@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Telegram</td>
+                        <td>harrypeach</td>
+                    </tr>
+                </table>
             </div>
-            <div id="content">
-                <h3>Telegram</h3>
-                <p>@harrypeach</p>
+            <div class="content">
+                <h3>My GPG key</h3>
+                <p>Most of my git commits and released binaries are signed with my GPG key. If you'd like to validate that anything I release truly came from me, you can download the public key below. The fingerprint is:</p>
+                <code>CFA0 FBC9 2E95 1DAF 8499 0A41 5A24 B165 D562 27F3</code>
+                <!-- TODO: Include GPG key-->
+                <a href="assets/files/CFA0FBC92E951DAF84990A415A24B165D56227F3.asc" title="My public GPG key" class="link-button"><i class="fas fa-lock">&nbsp;</i>Public key</a>
             </div>
         </section>
     </main>
     <hr>
     <footer>
-        <a href="#">My GPG Key</a> <!-- TODO: Include GPG key-->
         <span>Copyright &copy; Harry Peach 2019</span>
     </footer>
 </body>

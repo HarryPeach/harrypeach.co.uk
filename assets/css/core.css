@@ -10,6 +10,10 @@ body{
     padding: 0 20px;
 }
 
+a{
+    color: var(--secondary-text-color);
+}
+
 h1,h2,h3{
     font-family: "Heebo";
 }
@@ -54,6 +58,10 @@ footer{
 
 #content{
     margin: 3em 0;
+}
+
+#content p{
+    margin: 20px 0 30px 0;
 }
 
 #link-button{

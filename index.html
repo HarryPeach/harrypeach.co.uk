@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="description" content="A website for my personal projects, contact information, and a few other neat things.">
-<meta name="author" content="Harry Peach">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
-<title>Harry Peach</title>
-<header>
-    <h1>Harry Peach</h1>
-    <p>Computer Science student at Newcastle University</p>
-</header>
-<main>
-    <section>
-        <h2>Projects I've worked on</h2>
-        <h3>Skye Assistant</h3>
-        <p>An extensible, voice controller, virtual assistant. Written in Python.</p>
-        <h3>bootscreenx</h3>
-        <p>My fork of a BIOS image generator for the Nintendo 3DS console. Updated and maintained for the Nintendo Switch.</p>
-    </section>
-    <section>
-        <h2>How to contact me</h2>
-        <h3>Email</h3>
-        <p>harrypeach1999@gmail.com</p>
-        <h3>Telegram</h3>
-        <p>@harrypeach</p>
-    </section>
-</main>
-<footer>
-    <a href="#">My GPG Key</a> <!-- TODO: Include GPG key-->
-</footer>
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="description" content="A website for my personal projects, contact information, and a few other neat things.">
+    <meta name="author" content="Harry Peach">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Peach</title>
+
+    <!-- CSS -->
+    <link href="assets/css/core.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h1>Harry Peach</h1>
+        <p>Computer Science student at Newcastle University</p>
+    </header>
+    <main>
+        <section>
+            <h2>Projects I've worked on</h2>
+            <div id="content">
+                <h3>Skye Assistant</h3>
+                <p>An extensible, voice controlled, virtual assistant. Written in Python.</p>
+                <a href="https://github.com/HarryPeach/skye" title="View the source code on GitHub" id="link-button"><i class="fab fa-github">&nbsp;</i>Source</a>
+            </div>
+            <div id="content">
+                <h3>bootscreenx</h3>
+                <p>My fork of a BIOS image generator for the Nintendo 3DS console. Updated and maintained for the
+                    Nintendo
+                    Switch.</p>
+                <a href="https://github.com/HarryPeach/bootscreennx" title="View the source code on GitHub" id="link-button"><i class="fab fa-github">&nbsp;</i>Source</a>
+                <a href="https://harrypeach.github.io/bootscreennx/" title="View the project itself" id="link-button"><i class=""></i>Website</a>
+            </div>
+        </section>
+        <section>
+            <h2>How to contact me</h2>
+            <div id="content">
+                <h3>Email</h3>
+                <p>harrypeach1999@gmail.com</p>
+            </div>
+            <div id="content">
+                <h3>Telegram</h3>
+                <p>@harrypeach</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="#">My GPG Key</a> <!-- TODO: Include GPG key-->
+        <span>Copyright &copy; Harry Peach 2019</span>
+    </footer>
+</body>
 
 </html>

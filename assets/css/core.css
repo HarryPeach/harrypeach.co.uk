@@ -1,0 +1,56 @@
+:root{
+    --secondary-text-color: rgb(87, 87, 87);
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    min-width: 320px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1,h2,h3{
+    font-family: "Heebo";
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+header{
+    padding: 5% 0;
+}
+
+p{
+    color: var(--secondary-text-color);
+}
+
+section{
+    margin: 50px 0;
+}
+
+footer{
+    text-align: center;
+}
+
+#content{
+    padding-left: 50px;
+}
+
+#link-button{
+    background: rgb(243, 243, 243);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    transition: background .5s;
+}
+
+#link-button:hover{
+    background: rgb(190, 190, 190);
+}

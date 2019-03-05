@@ -2,7 +2,13 @@
     --secondary-text-color: rgb(87, 87, 87);
 }
 
+html{
+    background: url("/assets/svg/background.svg");
+    background-size: cover;
+}
+
 body{
+    background: white;
     font-family: 'Open Sans', sans-serif;
     min-width: 320px;
     max-width: 1000px;

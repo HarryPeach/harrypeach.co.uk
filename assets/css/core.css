@@ -22,8 +22,16 @@ h2{
     font-size: 2em;
 }
 
+h3{
+    font-size: 1.5em;
+}
+
 header{
     padding: 5% 0;
+}
+
+header p{
+    font-size: 1.6em;
 }
 
 p{
@@ -38,8 +46,14 @@ footer{
     text-align: center;
 }
 
+@media only screen and (min-width:60em) { 
+	#content{
+        padding-left: 50px;
+    }
+}
+
 #content{
-    padding-left: 50px;
+    margin: 3em 0;
 }
 
 #link-button{

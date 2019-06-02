@@ -1,0 +1,113 @@
+:root{
+    --secondary-text-color: rgb(87, 87, 87);
+}
+
+body{
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 320px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a{
+    color: var(--secondary-text-color);
+}
+
+hr{
+    height: 8px;
+    background-image: linear-gradient(90deg, rgb(240, 69, 240), rgb(46, 99, 245));
+    border: none;
+}
+
+h1,h2,h3{
+    color: rgb(20, 20, 20);
+    font-family: "Heebo", sans-serif;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+header{
+    padding: 5% 0;
+}
+
+header p{
+    font-size: 1.6em;
+}
+
+code{
+    display: block;
+    padding: 10px;
+    background: rgb(243, 243, 243);
+    margin: 10px 0;
+}
+
+p{
+    color: var(--secondary-text-color);
+}
+
+section{
+    margin: 50px 0;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
+
+@media only screen and (min-width:60em) { 
+	.content{
+        padding-left: 50px;
+    }
+}
+
+.content{
+    margin: 3em 0;
+}
+
+.content p{
+    margin: 20px 0 20px 0;
+}
+
+.link-button{
+    display: inline-block;
+    background: rgb(243, 243, 243);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    transition: background .5s;
+}
+
+.link-button:hover{
+    background: rgb(190, 190, 190);
+}
+
+#contact table{
+    margin: 0;
+}
+
+@media only screen and (max-width:60em) { 
+	#contact td{
+        display: block;
+    }
+}
+
+#contact td{
+    padding: 5px 10px;
+}
+
+#contact td:first-child{
+    font-weight: bold;
+}

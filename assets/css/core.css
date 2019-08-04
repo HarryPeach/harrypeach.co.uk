@@ -4,7 +4,8 @@
 
 body{
     background: white;
-    font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-display: swap;
     min-width: 320px;
     max-width: 1000px;
     margin: 0 auto;
@@ -110,4 +111,109 @@ footer{
 
 #contact td:first-child{
     font-weight: bold;
+}
+
+.flip-card h1 {
+	color: white;
+	font-size: 2em;
+	padding: 10px 0;
+	margin: 0;
+}
+
+.flip-card {
+	margin: 20px;
+	max-height: 500px;
+	height: 100%;
+	background-color: transparent;
+	perspective: 1000px;
+}
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	min-height: 200px;
+	height: 100%;
+	transition: all 0.8s ease-in-out;
+	transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-back {
+	height: 100%;
+}
+
+.flip-card-front, .flip-card-back {
+	transition: height 0.4s ease-in-out;
+	position: absolute;
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.flip-card-front {
+	background: #333;
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), var(--image) no-repeat center center/cover;
+	color: white;
+}
+
+.flip-card-back {
+	overflow: hidden;
+	color: white;
+	height: 10px;
+}
+
+.flip-card-back .card-content {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	font-size: 2em;
+	align-items: baseline;
+}
+
+.flip-card-back .card-content i {
+	padding: 20px;
+	text-decoration: none;
+	color: white;
+}
+
+/* Render a copy of the image below the card to look like a drop shadow */
+.flip-card::before {
+	content: "";
+	transition: all .4s ease-in-out;
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	top: 5%;
+	left: calc(5% / 2);
+	z-index: -1;
+	border-radius: 50px;
+	background: var(--image) 
+				no-repeat 
+				center center/cover;
+	filter: blur(10px);
+}
+
+/* Shrink the "drop shadow" when the user hovers over the card */
+.flip-card:hover::before{
+    transform: scale(0.9);
+}
+
+.card-content {
+	position: absolute;
+	padding: 20px;
+	bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.flip-card-inner {
+	  min-height: 300px;
+	}
+
+	.flip-card-back .card-content {
+		justify-content: left;
+	}
+}
+
+@media only screen and (min-width: 600px){
+	
 }

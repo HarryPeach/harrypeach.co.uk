@@ -149,7 +149,7 @@ footer{
 
 .flip-card-front {
 	background: #333;
-	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), var(--image) no-repeat center center/cover;
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), var(--image) no-repeat center center/cover;
 	color: white;
 }
 

@@ -4,7 +4,8 @@
 
 body{
     background: white;
-    font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-display: swap;
     min-width: 320px;
     max-width: 1000px;
     margin: 0 auto;

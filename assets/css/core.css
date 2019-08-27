@@ -113,6 +113,15 @@ footer{
     font-weight: bold;
 }
 
+.lang-chip{
+	border: 1px solid white;
+	padding: 5px;
+	margin: 0 5px;
+	border-radius: 5px;
+	font-size: .8em;
+	height: 20px;
+}
+
 .flip-card h1 {
 	color: white;
 	font-size: 2em;
@@ -204,9 +213,26 @@ footer{
 	bottom: 0;
 }
 
+.card-content h1{
+	display: inline;
+	margin-right: 10px;
+}
+
+.card-header{
+	/* position: relative; */
+	display: flex;
+	flex-wrap: wrap;
+	align-self: auto;
+	align-items: center;
+}
+
 @media only screen and (max-width: 600px) {
 	.flip-card-inner {
 	  min-height: 300px;
+	}
+
+	.card-header{
+		margin-bottom: 20px;
 	}
 
 	.flip-card-back .card-content {

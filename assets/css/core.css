@@ -219,7 +219,6 @@ footer{
 }
 
 .card-header{
-	/* position: relative; */
 	display: flex;
 	flex-wrap: wrap;
 	align-self: auto;
@@ -237,5 +236,33 @@ footer{
 
 	.flip-card-back .card-content {
 		justify-content: left;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #222;
+		color: #fff;
+	}
+
+	h1, h2, h3, p, a{
+		color: #fff;
+	}
+
+	.flip-card::before{
+		display: none;
+	}
+
+	code{
+		color: #333;
+	}
+
+	.link-button{ 
+		background: #444;
+		color: #fff;
+	}
+
+	.link-button:hover{
+		background: #666;
 	}
 }

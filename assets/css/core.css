@@ -254,7 +254,8 @@ footer{
 	}
 
 	code{
-		color: #333;
+		background: #333;
+		color: white;
 	}
 
 	.link-button{ 

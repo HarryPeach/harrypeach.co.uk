@@ -1,123 +1,127 @@
-:root{
-    --secondary-text-color: rgb(87, 87, 87);
+:root {
+	--secondary-text-color: rgb(87, 87, 87);
 }
 
-body{
-    background: white;
+body {
+	background: white;
 	font-family: 'Open Sans', sans-serif;
 	font-display: swap;
-    min-width: 320px;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
+	min-width: 320px;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
-a{
-    color: var(--secondary-text-color);
+a {
+	color: var(--secondary-text-color);
 }
 
-hr{
-    height: 8px;
-    background-image: linear-gradient(90deg, rgb(240, 69, 240), rgb(46, 99, 245));
-    border: none;
+hr {
+	height: 4px;
+	background-image: linear-gradient(90deg, rgb(240, 69, 240), rgb(46, 99, 245));
+	border: none;
 }
 
-h1,h2,h3{
-    color: rgb(20, 20, 20);
-    font-family: "Heebo", sans-serif;
+h1,
+h2,
+h3 {
+	color: rgb(20, 20, 20);
+	font-family: "Heebo", sans-serif;
 }
 
-h1{
-    font-size: 3em;
+h1 {
+	font-size: 3em;
+	margin: 10px 0;
 }
 
-h2{
-    font-size: 2em;
+h2 {
+	font-size: 2em;
 }
 
-h3{
-    font-size: 1.5em;
+h3 {
+	font-size: 1.5em;
 }
 
-header{
-    padding: 5% 0;
+header {
+	padding: 5% 0;
 }
 
-header p{
-    font-size: 1.6em;
+header p {
+	font-size: 1.6em;
 }
 
-code{
-    display: block;
-    padding: 10px;
-    background: rgb(243, 243, 243);
-    margin: 10px 0;
+code {
+	display: block;
+	padding: 10px;
+	background: rgb(243, 243, 243);
+	margin: 10px 0;
 }
 
-p{
-    color: var(--secondary-text-color);
+p {
+	color: var(--secondary-text-color);
+	margin: 10px 0;
 }
 
-section{
-    margin: 50px 0;
+section {
+	margin: 50px 0;
 }
 
-footer{
-    text-align: center;
-    padding: 10px;
+footer {
+	text-align: center;
+	padding: 10px;
 }
 
-@media only screen and (min-width:60em) { 
-	.content{
-        padding-left: 50px;
-    }
+@media only screen and (min-width:60em) {
+	.content {
+		padding-left: 20px;
+	}
 }
 
-.content{
-    margin: 3em 0;
+.content {
+	margin: 3em 0;
 }
 
-.content p{
-    margin: 20px 0 20px 0;
+.content p {
+	margin: 20px 0 20px 0;
 }
 
-.link-button{
-    display: inline-block;
-    background: rgb(243, 243, 243);
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: var(--secondary-text-color);
-    transition: background .5s;
+.link-button {
+	display: inline-block;
+	background: rgb(243, 243, 243);
+	padding: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	color: var(--secondary-text-color);
+	transition: background .5s;
 }
 
-.link-button:hover{
-    background: rgb(190, 190, 190);
+.link-button:hover {
+	background: rgb(190, 190, 190);
 }
 
-#contact table{
-    margin: 0;
+#contact table {
+	margin: 0;
 }
 
-@media only screen and (max-width:60em) { 
-	#contact td{
-        display: block;
-    }
+@media only screen and (max-width:60em) {
+	#contact td {
+		display: block;
+	}
 }
 
-#contact td{
-    padding: 5px 10px;
+#contact td {
+	padding: 5px 10px;
 }
 
-#contact td:first-child{
-    font-weight: bold;
+#contact td:first-child {
+	font-weight: bold;
 }
 
-.lang-chip{
+.lang-chip {
 	border: 1px solid white;
 	padding: 5px;
 	margin: 0 5px;
-	border-radius: 5px;
+	border-radius: 2px;
 	font-size: .8em;
 	height: 20px;
 }
@@ -150,10 +154,11 @@ footer{
 	height: 100%;
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
 	transition: height 0.4s ease-in-out;
 	position: absolute;
-	border-radius: 10px;
+	border-radius: 4px;
 	width: 100%;
 	height: 100%;
 	backface-visibility: hidden;
@@ -161,7 +166,7 @@ footer{
 
 .flip-card-front {
 	background: #333;
-	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), var(--image) no-repeat center center/cover;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), var(--image) no-repeat center center/cover;
 	color: white;
 }
 
@@ -196,15 +201,13 @@ footer{
 	left: calc(5% / 2);
 	z-index: -1;
 	border-radius: 50px;
-	background: var(--image) 
-				no-repeat 
-				center center/cover;
+	background: var(--image) no-repeat center center/cover;
 	filter: blur(10px);
 }
 
 /* Shrink the "drop shadow" when the user hovers over the card */
-.flip-card:hover::before{
-    transform: scale(0.9);
+.flip-card:hover::before {
+	transform: scale(0.9);
 }
 
 .card-content {
@@ -213,12 +216,12 @@ footer{
 	bottom: 0;
 }
 
-.card-content h1{
+.card-content h1 {
 	display: inline;
 	margin-right: 10px;
 }
 
-.card-header{
+.card-header {
 	display: flex;
 	flex-wrap: wrap;
 	align-self: auto;
@@ -227,10 +230,10 @@ footer{
 
 @media only screen and (max-width: 600px) {
 	.flip-card-inner {
-	  min-height: 300px;
+		min-height: 300px;
 	}
 
-	.card-header{
+	.card-header {
 		margin-bottom: 20px;
 	}
 
@@ -245,25 +248,29 @@ footer{
 		color: #fff;
 	}
 
-	h1, h2, h3, p, a{
+	h1,
+	h2,
+	h3,
+	p,
+	a {
 		color: #fff;
 	}
 
-	.flip-card::before{
+	.flip-card::before {
 		display: none;
 	}
 
-	code{
+	code {
 		background: #333;
 		color: white;
 	}
 
-	.link-button{ 
+	.link-button {
 		background: #444;
 		color: #fff;
 	}
 
-	.link-button:hover{
+	.link-button:hover {
 		background: #666;
 	}
 }

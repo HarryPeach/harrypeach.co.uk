@@ -4,7 +4,7 @@ The source code for my personal portfolio website.
 
 ## License
 
-	Copyright (C) 2019 Harry Peach
+	Copyright (C) 2020 Harry Peach
 
 	This program is free software: you can redistribute it and/or modify
 	it under the terms of the GNU Affero General Public License as published

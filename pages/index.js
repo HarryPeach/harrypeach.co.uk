@@ -1,6 +1,7 @@
 import styles from "./Index.module.scss";
 import Head from "next/head";
 import Header from "../components/Header";
+import Project from "../components/Project";
 
 export default function Index() {
 	return (
@@ -10,6 +11,11 @@ export default function Index() {
 			</Head>
 			<div className={styles.content}>
 				<Header />
+				<Project
+					title="Lorem Ipsum"
+					desc="Sint aliquip dolore ex laborum aliquip laborum."
+					image=""
+				/>
 			</div>
 		</>
 	);

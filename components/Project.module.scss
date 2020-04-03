@@ -1,0 +1,15 @@
+.project {
+	composes: border-radius from "../src/css/shared.module.scss", box-shadow from "../src/css/shared.module.scss";
+	// border: 1px dotted red;
+	border-top: 5px solid rgb(218, 72, 72);
+	padding: 10px;
+	margin: 10px;
+}
+
+.title {
+	font-weight: 700;
+}
+
+.desc {
+	color: hsl(0, 0, 30%);
+}

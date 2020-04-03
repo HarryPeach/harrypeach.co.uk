@@ -1,0 +1,12 @@
+/*
+	This file is intended for design consistence across the site.
+	The rules should be used with 'composes' properties.
+*/
+
+.box-shadow {
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.border-radius {
+	border-radius: 10px;
+}

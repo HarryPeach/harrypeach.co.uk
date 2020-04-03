@@ -1,3 +1,4 @@
+import "../src/css/reset.css";
 import "../src/css/global.scss";
 
 // This default export is required in a new `pages/_app.js` file.

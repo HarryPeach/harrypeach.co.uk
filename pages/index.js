@@ -1,8 +1,16 @@
+import styles from "./Index.module.scss";
+import Head from "next/head";
+import Header from "../components/Header";
+
 export default function Index() {
 	return (
 		<>
-			<h1>Harry Peach</h1>
-			<h2>Computer Science Student and Newcastle University</h2>
+			<Head>
+				<title>Harry Peach</title>
+			</Head>
+			<div className={styles.content}>
+				<Header />
+			</div>
 		</>
 	);
 }

@@ -12,7 +12,8 @@ export default function Index() {
 			<div className={styles.content}>
 				<Header />
 				<Project
-					title="Lorem Ipsum"
+					title="Sample project"
+					tags={["React", "Javascript", "Python"]}
 					desc="Sint aliquip dolore ex laborum aliquip laborum."
 					image=""
 					source="http://example.com"

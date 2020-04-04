@@ -6,7 +6,7 @@
 	// border: 1px dotted red;
 	border-top: 5px solid const.$accent;
 	padding: 20px;
-	margin: 10px;
+	margin: 20px;
 }
 
 .title {
@@ -21,7 +21,7 @@
 
 .tag {
 	font-size: 0.8em;
-	color: hsl(0, 0, 60%);
+	color: const.$foreground_text_least;
 }
 
 .tag::after {
@@ -30,6 +30,18 @@
 
 .desc {
 	font-size: 1em;
-	color: hsl(0, 0, 30%);
+	color: const.$foreground_text_less;
 	margin: 6px 0;
+}
+
+@media (prefers-color-scheme: dark) {
+	.project {
+		box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05);
+	}
+	.tag {
+		color: const.$foreground_text_least_dark;
+	}
+	.desc {
+		color: const.$foreground_text_less_dark;
+	}
 }

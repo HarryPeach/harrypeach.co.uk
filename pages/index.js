@@ -18,6 +18,20 @@ export default function Index() {
 					image=""
 					source="http://example.com"
 				/>
+				<Project
+					title="Sample project"
+					tags={["React", "Javascript", "Python"]}
+					desc="Sint aliquip dolore ex laborum aliquip laborum."
+					image=""
+					source="http://example.com"
+				/>
+				<Project
+					title="Sample project"
+					tags={["React", "Javascript", "Python"]}
+					desc="Sint aliquip dolore ex laborum aliquip laborum."
+					image=""
+					source="http://example.com"
+				/>
 			</div>
 		</div>
 	);

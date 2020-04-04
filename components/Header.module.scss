@@ -1,8 +1,21 @@
+@use "../src/css/constants.scss" as const;
+
+.header {
+	margin: 40px 20px;
+}
+
 .header .title {
 	font-size: 3em;
 	font-weight: 700;
+	margin: 20px 0;
 }
 
 .header .subtitle {
-	color: hsl(0, 0, 30%);
+	color: const.$foreground_text_less;
+}
+
+@media (prefers-color-scheme: dark) {
+	.header .subtitle {
+		color: const.$foreground_text_less_dark;
+	}
 }

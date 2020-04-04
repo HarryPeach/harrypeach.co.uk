@@ -5,7 +5,7 @@ import Project from "../components/Project";
 
 export default function Index() {
 	return (
-		<>
+		<div className={styles.root}>
 			<Head>
 				<title>Harry Peach</title>
 			</Head>
@@ -17,6 +17,6 @@ export default function Index() {
 					image=""
 				/>
 			</div>
-		</>
+		</div>
 	);
 }

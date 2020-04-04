@@ -1,8 +1,19 @@
-// @use "../src/css/color.scss";
+@use "../src/css/constants.scss" as const;
+
+.root {
+	background: const.$background;
+	height: 100%;
+}
 
 .content {
 	min-width: 320px;
 	max-width: 820px;
 	margin: 0 auto;
 	padding: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+	.root {
+		background: const.$background_dark;
+	}
 }

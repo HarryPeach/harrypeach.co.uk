@@ -1,0 +1,42 @@
+@use "../src/css/constants.scss" as const;
+
+.button {
+	font-weight: 500;
+	padding: 10px;
+	font-size: 1em;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: none;
+	border-radius: 6px;
+	background: const.$accent;
+	margin: 5px;
+	color: white;
+	transition: background 0.3s;
+}
+
+.button:focus {
+	outline: none;
+}
+
+.button:hover {
+	background: darken(const.$accent, 10%);
+}
+
+.button:active {
+	background: darken(const.$accent, 20%);
+}
+
+.secondary {
+	border: none;
+	background: none;
+	color: const.$accent;
+}
+
+.secondary:hover {
+	background: hsla(0, 0, 0, 0.1);
+}
+
+.secondary:active {
+	background: hsla(0, 0, 0, 0.3);
+}

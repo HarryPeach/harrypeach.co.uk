@@ -15,6 +15,7 @@ export default function Index() {
 					title="Lorem Ipsum"
 					desc="Sint aliquip dolore ex laborum aliquip laborum."
 					image=""
+					source="http://example.com"
 				/>
 			</div>
 		</div>

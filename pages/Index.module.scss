@@ -1,7 +1,6 @@
-@use "../src/css/constants.scss" as const;
-
 .root {
-	background: const.$background;
+	color: var(--foreground-text);
+	background: var(--background);
 	height: 100%;
 }
 
@@ -12,9 +11,9 @@
 	padding: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-	.root {
-		color: const.$foreground_text_dark;
-		background: const.$background_dark;
-	}
-}
+// @media (prefers-color-scheme: dark) {
+// 	.root {
+// 		color: const.$foreground_text_dark;
+// 		background: const.$background_dark;
+// 	}
+// }

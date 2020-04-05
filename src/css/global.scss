@@ -1,7 +1,17 @@
 @import url("https://rsms.me/inter/inter.css");
 :root {
 	font-weight: 400;
+	--foreground-text: rgb(10, 10, 10);
+	--foreground-text-less: rgb(40, 40, 40);
+	--foreground-text-least: rgb(100, 100, 100);
+	--background: rgb(250, 250, 250);
+	--accent: rgb(237, 69, 240);
 }
+
+$foreground_text_dark: rgb(250, 250, 250);
+$foreground_text_less_dark: darken($foreground_text_dark, 10%);
+$foreground_text_least_dark: darken($foreground_text_dark, 40%);
+$background_dark: rgb(20, 20, 20);
 
 html {
 	font-family: "Inter", sans-serif;
@@ -16,5 +26,14 @@ body,
 @supports (font-variation-settings: normal) {
 	html {
 		font-family: "Inter var", sans-serif;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-text: rgb(250, 250, 250);
+		--foreground-text-less: rgb(220, 220, 220);
+		--foreground-text-least: rgb(170, 170, 170);
+		--background: rgb(10, 10, 10);
 	}
 }

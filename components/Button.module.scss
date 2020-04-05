@@ -1,17 +1,15 @@
-@use "../src/css/constants.scss" as const;
-
 .button {
 	font-weight: 500;
-	padding: 10px;
+	padding: 8px 10px;
 	font-size: 1rem;
 	// text-transform: uppercase;
 	cursor: pointer;
 	border: none;
 	border-radius: 6px;
-	background: const.$accent;
+	background: var(--accent);
 	margin: 5px;
 	color: white;
-	transition: background 0.3s;
+	transition: filter 0.3s;
 }
 
 .button:focus {
@@ -19,17 +17,17 @@
 }
 
 .button:hover {
-	background: darken(const.$accent, 10%);
+	filter: brightness(80%);
 }
 
 .button:active {
-	background: darken(const.$accent, 20%);
+	filter: brightness(70%);
 }
 
 .secondary {
 	border: none;
 	background: none;
-	color: const.$accent;
+	color: var(--accent);
 }
 
 .secondary:hover {

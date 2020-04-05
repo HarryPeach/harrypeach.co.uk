@@ -3,7 +3,11 @@ import Button from "./Button";
 
 export default function Project(props) {
 	const tags = props.tags.map((tag) => {
-		return <span className={styles.tag}>{tag}</span>;
+		return (
+			<span className={styles.tag} key={tag}>
+				{tag}
+			</span>
+		);
 	});
 	return (
 		<div className={styles.project}>

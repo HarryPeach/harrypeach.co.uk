@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Project from "../components/Project";
 import Link from "next/link";
+import projects from "../data/projects";
 
 import { motion } from "framer-motion";
 
@@ -18,6 +19,18 @@ export default function Index() {
 		},
 	};
 
+	const projectsMap = projects.map((project) => {
+		return (
+			<Project
+				key={project.id}
+				id={project.id}
+				title={project.title}
+				desc={project.desc}
+				tags={project.tags}
+			/>
+		);
+	});
+
 	return (
 		<>
 			<div className={styles.root}>
@@ -32,7 +45,8 @@ export default function Index() {
 					variants={thumbnailVariants}
 				>
 					<Header />
-					<Project
+					{projectsMap}
+					{/* <Project
 						title="Sample project"
 						tags={["React", "Javascript", "Python"]}
 						desc="Sint aliquip dolore ex laborum aliquip laborum."
@@ -45,14 +59,7 @@ export default function Index() {
 						desc="Sint aliquip dolore ex laborum aliquip laborum."
 						image=""
 						page="/projects/sample"
-					/>
-					<Project
-						title="Sample project"
-						tags={["React", "Javascript", "Python"]}
-						desc="Sint aliquip dolore ex laborum aliquip laborum."
-						image=""
-						page="/projects/sample"
-					/>
+					/> */}
 				</motion.div>
 			</div>
 		</>

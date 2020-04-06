@@ -23,7 +23,9 @@ export default function Project(props) {
 			<p className={styles.desc}>{props.desc}</p>
 			<div className={styles.buttons}>
 				{props.source && <Button secondary>Source Code</Button>}
-				<Button onClick={goToPage}>More</Button>
+				<Link href="/projects/[project]" as={`/projects/${props.id}`}>
+					<Button>More</Button>
+				</Link>
 			</div>
 		</div>
 	);

@@ -1,19 +1,19 @@
 {
-  "name": "harrypeach.co.uk",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "clsx": "^1.1.0",
-    "framer-motion": "^1.10.3",
-    "next": "9.3.4",
-    "postcss-modules-values": "^3.0.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "sass": "^1.26.3"
-  }
+	"name": "harrypeach.co.uk",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"clsx": "^1.1.0",
+		"framer-motion": "^1.10.3",
+		"next": "^9.3.4",
+		"postcss-modules-values": "^3.0.0",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"sass": "^1.26.3"
+	}
 }

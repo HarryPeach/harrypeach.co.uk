@@ -1,5 +1,6 @@
 import styles from "./Project.module.scss";
 import Button from "./Button";
+import Link from "next/link";
 import Router from "next/router";
 
 export default function Project(props) {
@@ -11,9 +12,8 @@ export default function Project(props) {
 		);
 	});
 
-	const clickSource = () => {
-		console.log("epic");
-		Router.push(props.source);
+	const goToPage = () => {
+		Router.push(props.page);
 	};
 
 	return (
@@ -22,12 +22,8 @@ export default function Project(props) {
 			{tags}
 			<p className={styles.desc}>{props.desc}</p>
 			<div className={styles.buttons}>
-				{props.source && (
-					<Button secondary onClick={clickSource}>
-						Source Code
-					</Button>
-				)}
-				<Button>Demo</Button>
+				{props.source && <Button secondary>Source Code</Button>}
+				<Button onClick={goToPage}>More</Button>
 			</div>
 		</div>
 	);

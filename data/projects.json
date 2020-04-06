@@ -1,0 +1,16 @@
+[
+	{
+		"id": 0,
+		"title": "Project Title",
+		"desc": "Project Description",
+		"tags": ["React", "Javascript", "Python"],
+		"coverImage": ""
+	},
+	{
+		"id": 1,
+		"title": "Another Project Title",
+		"desc": "Another Project Description",
+		"tags": ["React", "Javascript", "Python"],
+		"coverImage": ""
+	}
+]

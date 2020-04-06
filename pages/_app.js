@@ -1,8 +1,26 @@
 import "../src/css/reset.css";
 import "../src/css/global.scss";
-// require("../src/css/global.module.scss");
+import { AnimatePresence } from "framer-motion";
+import { useRouter } from "next/router";
 
-// This default export is required in a new `pages/_app.js` file.
-export default function MyApp({ Component, pageProps }) {
-	return <Component {...pageProps} />;
+function handleExitComplete() {
+	if (typeof window !== "undefined") {
+		window.scrollTo({ top: 0 });
+	}
 }
+
+function MyApp({ Component, pageProps }) {
+	const router = useRouter();
+	return (
+		<>
+			<AnimatePresence
+				exitBeforeEnter
+				onExitComplete={handleExitComplete}
+			>
+				<Component {...pageProps} key={router.route} />
+			</AnimatePresence>
+		</>
+	);
+}
+
+export default MyApp;

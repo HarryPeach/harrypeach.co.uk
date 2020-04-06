@@ -1,11 +1,11 @@
 [
 	{
 		"id": 0,
-		"title": "Project Title",
-		"desc": "Project Description",
-		"descFull": "Mollit do ad aliquip sit ipsum nulla pariatur nulla labore proident mollit. Id voluptate duis laborum exercitation incididunt commodo cupidatat. Amet dolor laboris adipisicing irure mollit ipsum. Fugiat eiusmod culpa id laboris occaecat esse veniam sit aute ullamco excepteur dolor ex. Sunt ipsum cillum eu laboris aliquip mollit ipsum consequat et consequat. Aliquip Lorem cupidatat magna exercitation.",
+		"title": "bootscreennx",
+		"desc": "A website to create boot images or the Nintendo Switch",
+		"descFull": "bootscreenx creates boot images for the Nintendo Switch that resemble BIOS screens from early computers. It was originally an update of a similar tool for the Nintendo 3DS, but was rewritten and improved.",
 		"tags": ["React", "Javascript", "Python"],
-		"coverImage": "https://placeimg.com/640/320/any"
+		"coverImage": "/assets/images/projects/bootscreennx/cover"
 	},
 	{
 		"id": 1,

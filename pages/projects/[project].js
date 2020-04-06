@@ -26,10 +26,20 @@ export default function Project(props) {
 				>
 					<h2 className={styles.title}>{props.project.title}</h2>
 					<p className={styles.subtitle}>{props.project.desc}</p>
-					<img
-						className={styles.coverImage}
-						src={props.project.coverImage}
-					></img>
+					<picture className={styles.coverImage}>
+						<source
+							srcset={props.project.coverImage + ".webp"}
+							type="image/webp"
+						/>
+						<source
+							srcset={props.project.coverImage + ".jpg"}
+							type="image/jpeg"
+						/>
+						<img
+							src={props.project.coverImage + ".jpg"}
+							alt="Cover Photo"
+						></img>
+					</picture>
 					<p>{props.project.descFull}</p>
 				</motion.div>
 			</motion.div>

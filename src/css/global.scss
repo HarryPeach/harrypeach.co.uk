@@ -19,6 +19,13 @@ body,
 	overflow: auto;
 }
 
+#__next {
+	color: var(--foreground-text);
+	background: var(--background);
+	height: 100%;
+	overflow: auto;
+}
+
 @supports (font-variation-settings: normal) {
 	html {
 		font-family: "Inter var", sans-serif;
@@ -31,5 +38,14 @@ body,
 		--foreground-text-less: rgb(220, 220, 220);
 		--foreground-text-least: rgb(170, 170, 170);
 		--background: rgb(20, 20, 20);
+	}
+
+	#__next {
+		background-color: rgb(119, 0, 255);
+		background-image: linear-gradient(
+			0deg,
+			var(--background),
+			rgba(10, 10, 10, 0.8)
+		);
 	}
 }

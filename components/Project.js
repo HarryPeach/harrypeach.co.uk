@@ -2,6 +2,7 @@ import styles from "./Project.module.scss";
 import Button from "./Button";
 import Link from "next/link";
 import Router from "next/router";
+import { motion } from "framer-motion";
 
 export default function Project(props) {
 	const tags = props.tags.map((tag) => {
@@ -12,12 +13,13 @@ export default function Project(props) {
 		);
 	});
 
-	const goToPage = () => {
-		Router.push(props.page);
+	const item = {
+		hidden: { opacity: 0 },
+		show: { opacity: 1 },
 	};
 
 	return (
-		<div className={styles.project}>
+		<motion.div variants={item} className={styles.project}>
 			<h1 className={styles.title}>{props.title}</h1>
 			{tags}
 			<p className={styles.desc}>{props.desc}</p>
@@ -27,6 +29,6 @@ export default function Project(props) {
 					<Button>More</Button>
 				</Link>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

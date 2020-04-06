@@ -8,15 +8,29 @@ import projects from "../data/projects";
 import { motion } from "framer-motion";
 
 export default function Index() {
-	const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] };
-	const thumbnailVariants = {
-		initial: { scale: 0.9, opacity: 0 },
-		enter: { scale: 1, opacity: 1, transition },
-		exit: {
-			scale: 0.5,
-			opacity: 0,
-			transition: { duration: 1.5, ...transition },
+	const container = {
+		hidden: { x: -20, opacity: 0 },
+		show: {
+			x: 0,
+			opacity: 1,
+			transition: {
+				duration: 1,
+				staggerChildren: 0.1,
+			},
 		},
+		exit: {
+			x: 20,
+			opacity: 0,
+			transition: {
+				duration: 0.5,
+				staggerChildren: 0.1,
+			},
+		},
+	};
+
+	const item = {
+		hidden: { opacity: 0 },
+		show: { opacity: 1 },
 	};
 
 	const projectsMap = projects.map((project) => {
@@ -39,26 +53,12 @@ export default function Index() {
 				</Head>
 				<Header />
 				<motion.div
-					initial="initial"
-					animate="enter"
+					initial="hidden"
+					animate="show"
 					exit="exit"
-					variants={thumbnailVariants}
+					variants={container}
 				>
 					{projectsMap}
-					{/* <Project
-						title="Sample project"
-						tags={["React", "Javascript", "Python"]}
-						desc="Sint aliquip dolore ex laborum aliquip laborum."
-						image=""
-						page="/projects/sample"
-					/>
-					<Project
-						title="Sample project"
-						tags={["React", "Javascript", "Python"]}
-						desc="Sint aliquip dolore ex laborum aliquip laborum."
-						image=""
-						page="/projects/sample"
-					/> */}
 				</motion.div>
 			</div>
 		</>

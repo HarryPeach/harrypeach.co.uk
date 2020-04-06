@@ -28,11 +28,15 @@ export default function Project(props) {
 					<p className={styles.subtitle}>{props.project.desc}</p>
 					<picture className={styles.coverImage}>
 						<source
-							srcset={props.project.coverImage + ".webp"}
+							srcSet={props.project.coverImage + ".webp"}
 							type="image/webp"
 						/>
 						<source
-							srcset={props.project.coverImage + ".jpg"}
+							srcSet={props.project.coverImage + ".png"}
+							type="image/png"
+						/>
+						<source
+							srcSet={props.project.coverImage + ".jpg"}
 							type="image/jpeg"
 						/>
 						<img

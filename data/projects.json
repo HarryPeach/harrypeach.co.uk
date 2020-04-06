@@ -4,15 +4,23 @@
 		"title": "bootscreennx",
 		"desc": "A website to create boot images or the Nintendo Switch",
 		"descFull": "bootscreenx creates boot images for the Nintendo Switch that resemble BIOS screens from early computers. It was originally an update of a similar tool for the Nintendo 3DS, but was rewritten and improved.",
-		"tags": ["React", "Javascript", "Python"],
+		"tags": ["Nintendo Switch", "Javascript", "HTML / CSS"],
 		"coverImage": "/assets/images/projects/bootscreennx/cover"
 	},
 	{
 		"id": 1,
-		"title": "Another Project Title",
-		"desc": "Another Project Description",
+		"title": "DinoRunNX",
+		"desc": "A port of the Chromium \"Dino Game\" for the Nintendo Switch",
 		"descFull": "Ea excepteur laborum ipsum ut aute excepteur esse labore laboris nulla amet. Laborum incididunt cillum elit exercitation ex aute exercitation. Ullamco amet nostrud reprehenderit eu irure velit incididunt ipsum eiusmod excepteur tempor.",
 		"tags": ["React", "Javascript", "Python"],
-		"coverImage": "https://placeimg.com/640/320/any"
+		"coverImage": "/assets/images/projects/dinorunnx/cover"
+	},
+	{
+		"id": 2,
+		"title": "emojimage",
+		"desc": "A python package that generates collages of emojis based on an image input",
+		"descFull": "Ea excepteur laborum ipsum ut aute excepteur esse labore laboris nulla amet. Laborum incididunt cillum elit exercitation ex aute exercitation. Ullamco amet nostrud reprehenderit eu irure velit incididunt ipsum eiusmod excepteur tempor.",
+		"tags": ["React", "Javascript", "Python"],
+		"coverImage": "/assets/images/projects/emojimage/cover"
 	}
 ]

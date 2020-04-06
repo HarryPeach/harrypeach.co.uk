@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "clsx": "^1.1.0",
+    "framer-motion": "^1.10.3",
     "next": "9.3.4",
     "postcss-modules-values": "^3.0.0",
     "react": "16.13.1",

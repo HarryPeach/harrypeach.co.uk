@@ -13,6 +13,14 @@ html {
 }
 
 html,
+body {
+	color: var(--foreground-text);
+	background: var(--background);
+	height: 100%;
+	overflow: auto;
+}
+
+html,
 body,
 #__next {
 	height: 100%;
@@ -20,10 +28,10 @@ body,
 }
 
 #__next {
-	color: var(--foreground-text);
-	background: var(--background);
-	height: 100%;
-	overflow: auto;
+	min-width: 320px;
+	max-width: 820px;
+	margin: 0 auto;
+	padding: 10px;
 }
 
 @supports (font-variation-settings: normal) {
@@ -40,7 +48,8 @@ body,
 		--background: rgb(20, 20, 20);
 	}
 
-	#__next {
+	html,
+	body {
 		background-color: rgb(119, 0, 255);
 		background-image: linear-gradient(
 			0deg,

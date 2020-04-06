@@ -33,18 +33,17 @@ export default function Index() {
 
 	return (
 		<>
-			<div className={styles.root}>
+			<div>
 				<Head>
 					<title>Harry Peach</title>
 				</Head>
+				<Header />
 				<motion.div
-					className={styles.content}
 					initial="initial"
 					animate="enter"
 					exit="exit"
 					variants={thumbnailVariants}
 				>
-					<Header />
 					{projectsMap}
 					{/* <Project
 						title="Sample project"

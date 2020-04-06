@@ -1,0 +1,23 @@
+.project {
+	overflow: hidden;
+	composes: card from "../../src/css/shared.module.scss";
+}
+
+.title {
+	font-size: 2em;
+	font-weight: 700;
+	// text-align: center;
+	padding: 10px 0;
+}
+
+.subtitle {
+	color: var(--foreground-text-least);
+	// text-align: center;
+}
+
+.coverImage {
+	width: 90%;
+	display: block;
+	margin: 20px auto;
+	border-radius: 10px;
+}

@@ -2,6 +2,8 @@ import projects from "../../data/projects";
 import { motion } from "framer-motion";
 import Header from "../../components/Header";
 
+import styles from "./project.module.scss";
+
 export default function Project(props) {
 	const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] };
 	const thumbnailVariants = {
@@ -18,9 +20,18 @@ export default function Project(props) {
 		<>
 			<Header />
 			<motion.div initial="initial" animate="enter" exit="exit">
-				<motion.p variants={thumbnailVariants}>
-					project: {props.project.title}
-				</motion.p>
+				<motion.div
+					variants={thumbnailVariants}
+					className={styles.project}
+				>
+					<h2 className={styles.title}>{props.project.title}</h2>
+					<p className={styles.subtitle}>{props.project.desc}</p>
+					<img
+						className={styles.coverImage}
+						src={props.project.coverImage}
+					></img>
+					<p>{props.project.descFull}</p>
+				</motion.div>
 			</motion.div>
 		</>
 	);

@@ -1,10 +1,6 @@
 .project {
 	overflow: hidden;
-	composes: border-radius from "../src/css/shared.module.scss", box-shadow from "../src/css/shared.module.scss";
-	border-top: 5px solid var(--accent);
-	padding: 20px;
-	margin: 20px;
-	background: var(--red);
+	composes: card from "../src/css/shared.module.scss";
 }
 
 .title {
@@ -30,10 +26,4 @@
 	font-size: 1em;
 	color: var(--foreground-text-less);
 	margin: 6px 0;
-}
-
-@media (prefers-color-scheme: dark) {
-	.project {
-		box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05);
-	}
 }

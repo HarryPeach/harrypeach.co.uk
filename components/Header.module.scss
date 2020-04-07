@@ -1,13 +1,31 @@
 .header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	// flex-wrap: wrap;
 	margin: 40px 20px;
 }
 
 .header .title {
 	font-size: 3em;
 	font-weight: 700;
-	margin: 20px 0;
+	margin: 0 0 20px 0;
 }
 
 .header .subtitle {
 	color: var(--foreground-text-less);
+}
+
+.links {
+	text-align: right;
+	padding: 10px;
+}
+
+.link {
+	padding: 5px;
+}
+
+.link a {
+	text-decoration: none;
+	color: var(--accent);
 }

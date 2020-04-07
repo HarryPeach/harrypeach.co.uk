@@ -5,24 +5,19 @@ import Header from "../../components/Header";
 import styles from "./project.module.scss";
 
 export default function Project(props) {
-	const transition = {
-		duration: 0.5,
-		ease: [0.43, 0.13, 0.23, 0.96],
-	};
 	const thumbnailVariants = {
 		initial: { x: -20, opacity: 0 },
 		enter: {
 			x: 0,
 			opacity: 1,
 			transition: {
-				duration: 1,
-				...transition,
+				duration: 0.5,
 			},
 		},
 		exit: {
 			x: 20,
 			opacity: 0,
-			transition: { duration: 0.5, ...transition },
+			transition: { duration: 0.5 },
 		},
 	};
 

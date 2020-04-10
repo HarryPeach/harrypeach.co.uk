@@ -56,10 +56,19 @@ export default function Project(props) {
 	);
 }
 
-export async function getServerSideProps(context) {
-	let projectReference = projects.find(
-		(proj) => context.params.project == proj.id
-	);
+export async function getStaticPaths() {
+	return {
+		paths: [
+			{ params: { project: "0" } },
+			{ params: { project: "1" } },
+			{ params: { project: "2" } },
+		],
+		fallback: false,
+	};
+}
+
+export async function getStaticProps({ params }) {
+	let projectReference = projects.find((proj) => params.project == proj.id);
 	return {
 		props: {
 			project: projectReference,

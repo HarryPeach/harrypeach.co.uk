@@ -2,7 +2,7 @@ import styles from "./Header.module.scss";
 
 import { FiGithub, FiGitlab, FiLinkedin } from "react-icons/fi";
 
-export default function Header(props) {
+export default function Header() {
 	return (
 		<div className={styles.header}>
 			<div>

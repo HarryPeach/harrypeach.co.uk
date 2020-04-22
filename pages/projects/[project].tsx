@@ -1,10 +1,25 @@
-import projects from "../../data/projects";
+import React from "react";
+import projects from "../../data/projects.json";
 import { motion } from "framer-motion";
 import Header from "../../components/Header";
+import Skeleton from "../../components/Skeleton";
 
 import styles from "./project.module.scss";
 
-export default function Project(props) {
+type ProjectProps = {
+	project: {
+		coverImage: string;
+		desc: string;
+		descFull: string;
+		id: number;
+		tags: string[];
+		title: string;
+	};
+};
+
+export default function Project({ project }: ProjectProps) {
+	const [imageLoaded, setImageLoaded] = React.useState(false);
+
 	const thumbnailVariants = {
 		initial: { x: -20, opacity: 0 },
 		enter: {
@@ -29,27 +44,29 @@ export default function Project(props) {
 					variants={thumbnailVariants}
 					className={styles.project}
 				>
-					<h2 className={styles.title}>{props.project.title}</h2>
-					<p className={styles.subtitle}>{props.project.desc}</p>
+					<h2 className={styles.title}>{project.title}</h2>
+					<p className={styles.subtitle}>{project.desc}</p>
+					<Skeleton className={styles.skeleton} height={300} />
 					<picture className={styles.coverImage}>
 						<source
-							srcSet={props.project.coverImage + ".webp"}
+							srcSet={project.coverImage + ".webp"}
 							type="image/webp"
 						/>
 						<source
-							srcSet={props.project.coverImage + ".png"}
+							srcSet={project.coverImage + ".png"}
 							type="image/png"
 						/>
 						<source
-							srcSet={props.project.coverImage + ".jpg"}
+							srcSet={project.coverImage + ".jpg"}
 							type="image/jpeg"
 						/>
 						<img
-							src={props.project.coverImage + ".jpg"}
+							src={project.coverImage + ".jpg"}
 							alt="Cover Photo"
+							onLoad={() => setImageLoaded(true)}
 						></img>
 					</picture>
-					<p>{props.project.descFull}</p>
+					<p>{project.descFull}</p>
 				</motion.div>
 			</motion.div>
 		</>

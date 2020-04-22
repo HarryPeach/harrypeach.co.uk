@@ -1,9 +1,10 @@
-import styles from "./Index.module.scss";
+import React from "react";
 import Head from "next/head";
 import Header from "../components/Header";
 import Project from "../components/Project";
-import Link from "next/link";
-import projects from "../data/projects";
+
+import styles from "./Index.module.scss";
+import projects from "../data/projects.json";
 
 import { motion } from "framer-motion";
 
@@ -33,17 +34,15 @@ export default function Index() {
 		show: { opacity: 1 },
 	};
 
-	const projectsMap = projects.map((project) => {
-		return (
-			<Project
-				key={project.id}
-				id={project.id}
-				title={project.title}
-				desc={project.desc}
-				tags={project.tags}
-			/>
-		);
-	});
+	const projectsMap = projects.map((project) => (
+		<Project
+			key={project.id}
+			id={project.id}
+			title={project.title}
+			desc={project.desc}
+			tags={project.tags}
+		/>
+	));
 
 	return (
 		<>

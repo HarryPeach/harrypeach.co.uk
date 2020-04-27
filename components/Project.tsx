@@ -1,4 +1,4 @@
-import styles from "./Project.module.scss";
+import styles from "./Project.module.css";
 import Button from "./Button";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -27,7 +27,7 @@ export default function Project({ id, tags, desc, title }: ProjectProps) {
 
 	return (
 		<motion.div variants={item}>
-			<Card>
+			<Card className={styles.card}>
 				<h1 className={styles.title}>{title}</h1>
 				{projectTags}
 				<p className={styles.desc}>{desc}</p>

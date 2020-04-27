@@ -7,7 +7,7 @@ import projects from "../../data/projects.json";
 import Skeleton from "../../components/Skeleton";
 import Card from "../../components/Card";
 
-import styles from "./project.module.scss";
+import styles from "./project.module.css";
 
 type ProjectProps = {
 	project: {
@@ -31,10 +31,13 @@ export default function Project({ project }: ProjectProps) {
 		<>
 			<motion.div initial="initial" animate="enter" exit="exit">
 				<motion.div variants={Variants.largeItemVariant}>
-					<Card backButtonCallback={goBack}>
-						<h2 className={styles.title}>{project.title}</h2>
-						<p className={styles.subtitle}>{project.desc}</p>
-						<Skeleton className={styles.skeleton} height={300} />
+					<Card
+						className={styles.project}
+						backButtonCallback={goBack}
+					>
+						<h1 className={styles.title}>{project.title}</h1>
+						<h2 className={styles.subtitle}>{project.desc}</h2>
+						{/* <Skeleton className={styles.skeleton} height={300} /> */}
 						<picture className={styles.coverImage}>
 							<source
 								srcSet={project.coverImage + ".webp"}
@@ -54,7 +57,7 @@ export default function Project({ project }: ProjectProps) {
 								onLoad={() => setImageLoaded(true)}
 							></img>
 						</picture>
-						<p>{project.descFull}</p>
+						<p className={styles.content}>{project.descFull}</p>
 					</Card>
 				</motion.div>
 			</motion.div>

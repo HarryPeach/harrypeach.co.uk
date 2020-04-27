@@ -1,4 +1,4 @@
-import styles from "./Hero.module.scss";
+import styles from "./Hero.module.css";
 
 import { FiGithub, FiGitlab, FiLinkedin } from "react-icons/fi";
 

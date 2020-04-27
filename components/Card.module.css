@@ -1,12 +1,13 @@
 .card {
 	overflow: hidden;
-	border: 2px solid var(--accent);
+	/* // border: 2px solid var(--accent); */
 	border-radius: 5px;
 	padding: 20px;
 	margin: 20px;
 }
 
 .back {
+	color: var(--accent);
 	font-size: 1.5em;
 	cursor: pointer;
 }

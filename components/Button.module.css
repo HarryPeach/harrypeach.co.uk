@@ -1,14 +1,13 @@
 .button {
-	font-weight: 500;
-	padding: 8px 10px;
+	border: none;
+	padding: 4px;
 	font-size: 1rem;
 	cursor: pointer;
-	border: none;
-	border-radius: 6px;
-	background: var(--accent);
-	margin: 5px;
-	color: white;
-	transition: filter 0.3s;
+	background: none;
+	font-weight: 700;
+	color: var(--accent);
+	border-bottom: 2px solid var(--accent);
+	/* // transition: width 0.3s; */
 }
 
 .button:focus {
@@ -16,11 +15,12 @@
 }
 
 .button:hover {
-	filter: brightness(80%);
+	/* // width: 200px; */
+	/* // filter: brightness(80%); */
 }
 
 .button:active {
-	filter: brightness(70%);
+	/* // filter: brightness(70%); */
 }
 
 .secondary {

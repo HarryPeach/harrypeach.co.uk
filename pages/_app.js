@@ -1,5 +1,5 @@
 import "../src/css/reset.css";
-import "../src/css/global.scss";
+import "../src/css/global.css";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
 

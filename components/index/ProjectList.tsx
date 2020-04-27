@@ -3,7 +3,7 @@ import projects from "../../data/projects.json";
 import * as Variants from "../../src/animationVariants";
 
 import { motion } from "framer-motion";
-import styles from "./ProjectList.module.scss";
+import styles from "./ProjectList.module.css";
 
 export default function ProjectList() {
 	const projectsMap = projects.map((project) => (

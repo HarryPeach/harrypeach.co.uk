@@ -1,0 +1,25 @@
+.project {
+}
+
+.title {
+	color: var(--foreground-text);
+	padding: 20px 0;
+}
+
+.subtitle {
+	font-size: 2em;
+	color: var(--foreground-text-least);
+}
+
+.coverImage img,
+.skeleton {
+	width: 100%;
+	display: block;
+	margin: 20px 0;
+	border-radius: 10px;
+}
+
+.content {
+	font-size: 1.2em;
+	padding: 10px;
+}

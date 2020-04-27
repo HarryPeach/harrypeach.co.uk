@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import * as Variants from "../../src/animationVariants";
 
-import styles from "./MyInfo.module.scss";
+import styles from "./MyInfo.module.css";
 
 export default function MyInfo() {
 	return (

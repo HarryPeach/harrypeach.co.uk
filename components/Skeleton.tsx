@@ -1,4 +1,4 @@
-import styles from "./Skeleton.module.scss";
+import styles from "./Skeleton.module.css";
 import clsx from "clsx";
 
 type SkeletonProps = {

@@ -2,6 +2,7 @@ import Project from "./Project";
 import projects from "../data/projects.json";
 
 import { motion } from "framer-motion";
+import styles from "./ProjectList.module.scss";
 
 export default function ProjectList() {
 	const container = {
@@ -42,6 +43,7 @@ export default function ProjectList() {
 				exit="exit"
 				variants={container}
 			>
+				<h2 className={styles.title}>Projects</h2>
 				{projectsMap}
 			</motion.div>
 		</>

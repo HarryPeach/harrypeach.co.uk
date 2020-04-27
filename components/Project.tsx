@@ -2,6 +2,7 @@ import styles from "./Project.module.scss";
 import Button from "./Button";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Card from "./Card";
 
 type ProjectProps = {
 	desc: string;
@@ -25,16 +26,18 @@ export default function Project({ id, tags, desc, title }: ProjectProps) {
 	};
 
 	return (
-		<motion.div variants={item} className={styles.project}>
-			<h1 className={styles.title}>{title}</h1>
-			{projectTags}
-			<p className={styles.desc}>{desc}</p>
-			<div className={styles.buttons}>
-				{/* {props.source && <Button secondary>Source Code</Button>} */}
-				<Link href="/projects/[project]" as={`/projects/${id}`}>
-					<Button>More</Button>
-				</Link>
-			</div>
+		<motion.div variants={item}>
+			<Card>
+				<h1 className={styles.title}>{title}</h1>
+				{projectTags}
+				<p className={styles.desc}>{desc}</p>
+				<div className={styles.buttons}>
+					{/* {props.source && <Button secondary>Source Code</Button>} */}
+					<Link href="/projects/[project]" as={`/projects/${id}`}>
+						<Button>More</Button>
+					</Link>
+				</div>
+			</Card>
 		</motion.div>
 	);
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Router from "next/router";
 
+import * as Variants from "../../src/animationVariants";
 import projects from "../../data/projects.json";
 import Skeleton from "../../components/Skeleton";
 import Card from "../../components/Card";
@@ -22,22 +23,6 @@ type ProjectProps = {
 export default function Project({ project }: ProjectProps) {
 	const [imageLoaded, setImageLoaded] = React.useState(false);
 
-	const thumbnailVariants = {
-		initial: { x: -20, opacity: 0 },
-		enter: {
-			x: 0,
-			opacity: 1,
-			transition: {
-				duration: 0.5,
-			},
-		},
-		exit: {
-			x: 20,
-			opacity: 0,
-			transition: { duration: 0.5 },
-		},
-	};
-
 	const goBack = () => {
 		Router.back();
 	};
@@ -45,7 +30,7 @@ export default function Project({ project }: ProjectProps) {
 	return (
 		<>
 			<motion.div initial="initial" animate="enter" exit="exit">
-				<motion.div variants={thumbnailVariants}>
+				<motion.div variants={Variants.largeItemVariant}>
 					<Card backButtonCallback={goBack}>
 						<h2 className={styles.title}>{project.title}</h2>
 						<p className={styles.subtitle}>{project.desc}</p>

@@ -1,11 +1,11 @@
-import styles from "./Header.module.scss";
+import styles from "./Hero.module.scss";
 
 import { FiGithub, FiGitlab, FiLinkedin } from "react-icons/fi";
 
 export default function Header() {
 	return (
 		<div className={styles.header}>
-			<div>
+			<div className={styles.textContent}>
 				<h1 className={styles.title}>Harry Peach</h1>
 				<h2 className={styles.subtitle}>
 					Computer Science Student at Newcastle University

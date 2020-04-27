@@ -1,15 +1,15 @@
 @import url("https://rsms.me/inter/inter.css");
 :root {
 	font-weight: 400;
-	--foreground-text: rgb(10, 10, 10);
-	--foreground-text-less: rgb(40, 40, 40);
-	--foreground-text-least: rgb(100, 100, 100);
+	--foreground-text: rgb(20, 20, 30);
+	--foreground-text-less: rgb(80, 80, 90);
+	--foreground-text-least: rgb(110, 110, 120);
 	--background: linear-gradient(
 		180deg,
 		rgb(255, 255, 255) 20%,
 		rgb(245, 245, 255) 100%
 	);
-	--accent: rgb(236, 53, 197);
+	--accent: rgb(96, 71, 204);
 }
 
 html {

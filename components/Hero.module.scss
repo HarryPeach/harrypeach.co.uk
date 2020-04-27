@@ -3,16 +3,23 @@
 	justify-content: space-between;
 	align-items: center;
 	margin: 40px 20px;
+	height: 60%;
 }
 
 .header .title {
-	font-size: 3em;
-	font-weight: 700;
+	font-size: 4em;
+	font-weight: 800;
 	margin: 0 0 20px 0;
 }
 
 .header .subtitle {
+	font-weight: 700;
+	font-size: 1.4em;
 	color: var(--foreground-text-less);
+}
+
+.textContent {
+	padding: 0 20px 0 0;
 }
 
 .links {
@@ -25,6 +32,7 @@
 }
 
 .link a {
+	font-size: 2em;
 	text-decoration: none;
 	color: var(--accent);
 }

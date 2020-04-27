@@ -1,7 +1,6 @@
 import React from "react";
 import projects from "../../data/projects.json";
 import { motion } from "framer-motion";
-import Header from "../../components/Header";
 import Skeleton from "../../components/Skeleton";
 
 import styles from "./project.module.scss";
@@ -38,7 +37,7 @@ export default function Project({ project }: ProjectProps) {
 
 	return (
 		<>
-			<Header />
+			{/* <Header /> */}
 			<motion.div initial="initial" animate="enter" exit="exit">
 				<motion.div
 					variants={thumbnailVariants}

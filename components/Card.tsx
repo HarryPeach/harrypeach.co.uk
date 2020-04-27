@@ -6,16 +6,18 @@ import clsx from "clsx";
 type CardProps = {
 	children?: React.ReactNode;
 	className?: string;
-	backButtonCallback?: (event: React.MouseEvent<HTMLDivElement>) => void;
+	onClick?: (event: React.MouseEvent) => void;
+	backButtonCallback?: (event: React.MouseEvent) => void;
 };
 
 export default function Card({
 	children,
 	className,
 	backButtonCallback,
+	onClick,
 }: CardProps) {
 	return (
-		<div className={clsx(className, styles.card)}>
+		<div className={clsx(className, styles.card)} onClick={onClick}>
 			{backButtonCallback && (
 				<div className={styles.back} onClick={backButtonCallback}>
 					<FiArrowLeft />

@@ -1,9 +1,9 @@
-import styles from "./Project.module.css";
-import Button from "./Button";
-import Link from "next/link";
+import Router from "next/router";
 import { motion } from "framer-motion";
+
 import Card from "./Card";
 
+import styles from "./Project.module.css";
 type ProjectProps = {
 	desc: string;
 	id: number;
@@ -25,18 +25,16 @@ export default function Project({ id, tags, desc, title }: ProjectProps) {
 		show: { opacity: 1 },
 	};
 
+	const openLink = () => {
+		Router.push("/projects/[project]", `/projects/${id}`);
+	};
+
 	return (
 		<motion.div variants={item}>
-			<Card className={styles.card}>
+			<Card className={styles.card} onClick={openLink}>
 				<h1 className={styles.title}>{title}</h1>
 				{projectTags}
 				<p className={styles.desc}>{desc}</p>
-				<div className={styles.buttons}>
-					{/* {props.source && <Button secondary>Source Code</Button>} */}
-					<Link href="/projects/[project]" as={`/projects/${id}`}>
-						<Button>More</Button>
-					</Link>
-				</div>
 			</Card>
 		</motion.div>
 	);

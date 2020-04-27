@@ -1,13 +1,17 @@
 .button {
 	border: none;
-	padding: 4px;
+	padding: 0;
 	font-size: 1rem;
 	cursor: pointer;
 	background: none;
 	font-weight: 700;
 	color: var(--accent);
-	border-bottom: 2px solid var(--accent);
-	/* // transition: width 0.3s; */
+	/* border-bottom: 2px solid var(--accent); */
+	transition: background-size 0.4s;
+	background: linear-gradient(to right, var(--accent), var(--accent))
+		no-repeat;
+	background-size: 0% 2px;
+	background-position: left bottom;
 }
 
 .button:focus {
@@ -15,8 +19,8 @@
 }
 
 .button:hover {
-	/* // width: 200px; */
-	/* // filter: brightness(80%); */
+	background-size: 100% 2px;
+	/* border-bottom: 4px solid var(--accent); */
 }
 
 .button:active {

@@ -1,6 +1,7 @@
 .card {
 	color: var(--accent);
 	background: rgb(var(--accent-raw), 0.1);
+	cursor: pointer;
 }
 
 .title {

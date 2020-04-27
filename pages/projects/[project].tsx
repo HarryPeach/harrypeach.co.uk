@@ -1,7 +1,10 @@
 import React from "react";
-import projects from "../../data/projects.json";
 import { motion } from "framer-motion";
+import Router from "next/router";
+
+import projects from "../../data/projects.json";
 import Skeleton from "../../components/Skeleton";
+import Card from "../../components/Card";
 
 import styles from "./project.module.scss";
 
@@ -35,37 +38,39 @@ export default function Project({ project }: ProjectProps) {
 		},
 	};
 
+	const goBack = () => {
+		Router.back();
+	};
+
 	return (
 		<>
-			{/* <Header /> */}
 			<motion.div initial="initial" animate="enter" exit="exit">
-				<motion.div
-					variants={thumbnailVariants}
-					className={styles.project}
-				>
-					<h2 className={styles.title}>{project.title}</h2>
-					<p className={styles.subtitle}>{project.desc}</p>
-					<Skeleton className={styles.skeleton} height={300} />
-					<picture className={styles.coverImage}>
-						<source
-							srcSet={project.coverImage + ".webp"}
-							type="image/webp"
-						/>
-						<source
-							srcSet={project.coverImage + ".png"}
-							type="image/png"
-						/>
-						<source
-							srcSet={project.coverImage + ".jpg"}
-							type="image/jpeg"
-						/>
-						<img
-							src={project.coverImage + ".jpg"}
-							alt="Cover Photo"
-							onLoad={() => setImageLoaded(true)}
-						></img>
-					</picture>
-					<p>{project.descFull}</p>
+				<motion.div variants={thumbnailVariants}>
+					<Card backButtonCallback={goBack}>
+						<h2 className={styles.title}>{project.title}</h2>
+						<p className={styles.subtitle}>{project.desc}</p>
+						<Skeleton className={styles.skeleton} height={300} />
+						<picture className={styles.coverImage}>
+							<source
+								srcSet={project.coverImage + ".webp"}
+								type="image/webp"
+							/>
+							<source
+								srcSet={project.coverImage + ".png"}
+								type="image/png"
+							/>
+							<source
+								srcSet={project.coverImage + ".jpg"}
+								type="image/jpeg"
+							/>
+							<img
+								src={project.coverImage + ".jpg"}
+								alt="Cover Photo"
+								onLoad={() => setImageLoaded(true)}
+							></img>
+						</picture>
+						<p>{project.descFull}</p>
+					</Card>
 				</motion.div>
 			</motion.div>
 		</>

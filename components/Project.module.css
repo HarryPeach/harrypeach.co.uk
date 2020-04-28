@@ -25,6 +25,7 @@
 
 .desc {
 	font-size: 1em;
+	line-height: 1.5;
 	color: var(--foreground-text-less);
 	margin: 6px 0;
 }

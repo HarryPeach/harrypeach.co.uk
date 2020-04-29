@@ -1,5 +1,5 @@
 import styles from "./Hero.module.css";
-import * as Variants from "../../src/animationVariants";
+import * as Variants from "../../src/js/animationVariants";
 
 import { FiGithub, FiGitlab, FiLinkedin } from "react-icons/fi";
 import { motion } from "framer-motion";

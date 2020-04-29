@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Router from "next/router";
 
-import * as Variants from "../../src/animationVariants";
+import * as Variants from "../../src/js/animationVariants";
 import projects from "../../data/projects.json";
 import Card from "../../components/Card";
 

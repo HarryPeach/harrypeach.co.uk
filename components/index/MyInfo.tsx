@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import * as Variants from "../../src/animationVariants";
+import * as Variants from "../../src/js/animationVariants";
 
 import styles from "./MyInfo.module.css";
 

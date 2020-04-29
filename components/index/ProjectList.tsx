@@ -1,6 +1,6 @@
 import Project from "../Project";
 import projects from "../../data/projects.json";
-import * as Variants from "../../src/animationVariants";
+import * as Variants from "../../src/js/animationVariants";
 
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";

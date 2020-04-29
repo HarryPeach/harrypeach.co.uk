@@ -3,13 +3,39 @@ export const hero = {
 	show: {
 		opacity: 1,
 		transition: {
-			duration: 1
-		}
+			duration: 1,
+		},
 	},
 	exit: {
-		opacity: 0
-	}
-}
+		opacity: 0,
+	},
+};
+
+export const dialogFade = {
+	hidden: { opacity: 0 },
+	show: {
+		opacity: 1,
+		transition: {
+			duration: 0.5,
+		},
+	},
+	exit: {
+		opacity: 0,
+	},
+};
+
+export const dialogFall = {
+	hidden: { y: "-60%", x: "-50%" },
+	show: {
+		y: "-50%",
+		transition: {
+			duration: 0.3,
+		},
+	},
+	exit: {
+		y: "20%",
+	},
+};
 
 export const regularItem = {
 	hidden: { x: -20, opacity: 0 },

@@ -37,3 +37,8 @@
 	text-decoration: none;
 	color: var(--accent);
 }
+
+.titleLink {
+	color: var(--accent);
+	text-decoration: none;
+}

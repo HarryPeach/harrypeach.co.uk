@@ -3,6 +3,7 @@ import projects from "../../data/projects.json";
 import * as Variants from "../../src/animationVariants";
 
 import { motion } from "framer-motion";
+import { FiArrowRight } from "react-icons/fi";
 import styles from "./ProjectList.module.css";
 
 export default function ProjectList() {
@@ -26,6 +27,7 @@ export default function ProjectList() {
 			>
 				<h2 className={styles.title}>Projects</h2>
 				{projectsMap}
+				<h3 className={styles.more}>More projects <FiArrowRight /></h3>
 			</motion.div>
 		</div>
 	);

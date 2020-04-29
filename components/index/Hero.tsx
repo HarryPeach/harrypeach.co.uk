@@ -14,7 +14,7 @@ export default function Header() {
 			<div className={styles.textContent}>
 				<h1 className={styles.title}>Harry Peach</h1>
 				<h2 className={styles.subtitle}>
-					Computer Science Student at Newcastle University
+					Computer Science Student at <a className={styles.titleLink} href="https://ncl.ac.uk/">Newcastle University</a>
 				</h2>
 			</div>
 			<div className={styles.links}>

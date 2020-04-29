@@ -5,3 +5,18 @@
 .title {
 	padding: 10px 20px;
 }
+
+.more {
+	position: relative;
+	font-size: 1em;
+	line-height: 2em;
+	margin: 20px;
+	padding: 0 20px;
+	cursor: pointer;
+	color: var(--foreground-text-less);
+}
+
+.more svg {
+	position: absolute;
+	transform: translate(20%, 50%);
+}

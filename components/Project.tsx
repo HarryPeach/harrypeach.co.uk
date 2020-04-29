@@ -12,10 +12,10 @@ type ProjectProps = {
 };
 
 export default function Project({ id, tags, desc, title }: ProjectProps) {
-	const projectTags = tags.map((tag) => {
+	const projectTags = tags.map((tag, index) => {
 		return (
 			<span className={styles.tag} key={tag}>
-				{tag}
+				{tag} {index !== tags.length - 1 && "/"}
 			</span>
 		);
 	});

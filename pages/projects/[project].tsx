@@ -4,7 +4,6 @@ import Router from "next/router";
 
 import * as Variants from "../../src/animationVariants";
 import projects from "../../data/projects.json";
-import Skeleton from "../../components/Skeleton";
 import Card from "../../components/Card";
 
 import styles from "./project.module.css";

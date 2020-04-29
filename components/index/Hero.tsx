@@ -1,10 +1,16 @@
 import styles from "./Hero.module.css";
+import * as Variants from "../../src/animationVariants";
 
 import { FiGithub, FiGitlab, FiLinkedin } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 export default function Header() {
 	return (
-		<div className={styles.header}>
+		<motion.div initial="hidden"
+			animate="show"
+			exit="exit"
+			variants={Variants.hero}
+			className={styles.header}>
 			<div className={styles.textContent}>
 				<h1 className={styles.title}>Harry Peach</h1>
 				<h2 className={styles.subtitle}>
@@ -31,6 +37,6 @@ export default function Header() {
 					</a>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

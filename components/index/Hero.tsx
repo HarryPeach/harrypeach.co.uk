@@ -1,16 +1,21 @@
 import styles from "./Hero.module.css";
 import * as Variants from "../../src/js/animationVariants";
 
-import { FiGithub, FiGitlab, FiLinkedin } from "react-icons/fi";
+import React from "react";
+import { FiGithub, FiGitlab, FiLinkedin, FiSettings } from "react-icons/fi";
 import { motion } from "framer-motion";
+import Dialog from "../misc/Dialog";
 
 export default function Header() {
+	const [settingsDialogOpen, setSettingsDialogOpen] = React.useState(true);
+
 	return (
 		<motion.div initial="hidden"
 			animate="show"
 			exit="exit"
 			variants={Variants.hero}
 			className={styles.header}>
+			<FiSettings onClick={() => setSettingsDialogOpen(true)} />
 			<div className={styles.textContent}>
 				<h1 className={styles.title}>Harry Peach</h1>
 				<h2 className={styles.subtitle}>
@@ -37,6 +42,10 @@ export default function Header() {
 					</a>
 				</div>
 			</div>
+			<Dialog open={settingsDialogOpen} onClose={() => setSettingsDialogOpen(false)}>
+				<h1>Settings</h1>
+				<p>There will be settings here that the user can change!</p>
+			</Dialog>
 		</motion.div>
 	);
 }

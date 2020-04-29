@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import Dialog from "../misc/Dialog";
 
 export default function Header() {
-	const [settingsDialogOpen, setSettingsDialogOpen] = React.useState(true);
+	const [settingsDialogOpen, setSettingsDialogOpen] = React.useState(false);
 
 	return (
 		<motion.div initial="hidden"
@@ -15,7 +15,7 @@ export default function Header() {
 			exit="exit"
 			variants={Variants.hero}
 			className={styles.header}>
-			<FiSettings onClick={() => setSettingsDialogOpen(true)} />
+			<FiSettings className={styles.settings} onClick={() => setSettingsDialogOpen(true)} />
 			<div className={styles.textContent}>
 				<h1 className={styles.title}>Harry Peach</h1>
 				<h2 className={styles.subtitle}>

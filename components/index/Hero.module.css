@@ -42,3 +42,12 @@
 	color: var(--accent);
 	text-decoration: none;
 }
+
+.settings {
+	font-size: 2em;
+	top: 1em;
+	right: 2em;
+	position: absolute;
+	cursor: pointer;
+	color: var(--foreground-text-least);
+}

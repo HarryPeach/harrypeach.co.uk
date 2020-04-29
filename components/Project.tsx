@@ -32,8 +32,10 @@ export default function Project({ id, tags, desc, title }: ProjectProps) {
 	return (
 		<motion.div variants={item}>
 			<Card className={styles.card} onClick={openLink}>
-				<h1 className={styles.title}>{title}</h1>
-				{projectTags}
+				<div className={styles.titleFlex}>
+					<h1 className={styles.title}>{title}</h1>
+					<span className={styles.tags}>{projectTags}</span>
+				</div>
 				<p className={styles.desc}>{desc}</p>
 			</Card>
 		</motion.div>

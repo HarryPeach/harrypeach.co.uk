@@ -6,12 +6,25 @@
 
 .title {
 	font-size: 1.6em;
+	line-height: 1.6em;
 	font-weight: 700;
 	margin: 6px 0;
 }
 
 .buttons {
 	float: right;
+}
+
+.titleFlex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tags {
+	margin: 0;
+	line-height: 1.6em;
 }
 
 .tag {

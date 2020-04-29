@@ -3,7 +3,7 @@
 }
 
 .container {
-	position: absolute;
+	position: fixed;
 	background: rgb(0, 0, 0, 0.3);
 	top: 0;
 	left: 0;

@@ -10,16 +10,24 @@ export default function Header() {
 	const [settingsDialogOpen, setSettingsDialogOpen] = React.useState(false);
 
 	return (
-		<motion.div initial="hidden"
+		<motion.div
+			initial="hidden"
 			animate="show"
 			exit="exit"
 			variants={Variants.hero}
-			className={styles.header}>
-			<FiSettings className={styles.settings} onClick={() => setSettingsDialogOpen(true)} />
+			className={styles.header}
+		>
+			<FiSettings
+				className={styles.settings}
+				onClick={() => setSettingsDialogOpen(true)}
+			/>
 			<div className={styles.textContent}>
 				<h1 className={styles.title}>Harry Peach</h1>
 				<h2 className={styles.subtitle}>
-					Computer Science Student at <a className={styles.titleLink} href="https://ncl.ac.uk/">Newcastle University</a>
+					Computer Science Student at{" "}
+					<a className={styles.titleLink} href="https://ncl.ac.uk/">
+						Newcastle University
+					</a>
 				</h2>
 			</div>
 			<div className={styles.links}>
@@ -42,9 +50,17 @@ export default function Header() {
 					</a>
 				</div>
 			</div>
-			<Dialog open={settingsDialogOpen} onClose={() => setSettingsDialogOpen(false)}>
+			<Dialog
+				open={settingsDialogOpen}
+				onClose={() => setSettingsDialogOpen(false)}
+			>
 				<h1>Settings</h1>
-				<p>There will be settings here that the user can change!</p>
+				<h2>Theme</h2>
+				<p>
+					Here you can change the accent or choose dark or light mode.
+				</p>
+				<h2>About</h2>
+				<p>Version here perhaps?</p>
 			</Dialog>
 		</motion.div>
 	);

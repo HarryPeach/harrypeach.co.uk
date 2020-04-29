@@ -46,7 +46,7 @@
 .settings {
 	font-size: 2em;
 	top: 1em;
-	right: 2em;
+	right: 45px;
 	position: absolute;
 	cursor: pointer;
 	color: var(--foreground-text-least);

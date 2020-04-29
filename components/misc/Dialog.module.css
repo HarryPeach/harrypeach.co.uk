@@ -24,3 +24,8 @@
 .dialog h1 {
 	padding: 10px 0 20px 0;
 }
+
+.dialog h2,
+.dialog p {
+	padding: 10px;
+}

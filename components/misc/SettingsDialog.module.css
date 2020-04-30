@@ -21,11 +21,25 @@
 	background: var(--background);
 }
 
-.dialog h1 {
+.dialog .title {
 	padding: 10px 0 20px 0;
 }
 
-.dialog h2,
+.dialog .subtitle,
 .dialog p {
+	padding: 10px 0;
+}
+
+.content {
 	padding: 10px;
+}
+
+.color {
+	width: 2em;
+	height: 2em;
+	display: inline-block;
+	margin: 5px;
+	cursor: pointer;
+	background: rgb(255, 255, 255, 0.4);
+	border-radius: 100px;
 }

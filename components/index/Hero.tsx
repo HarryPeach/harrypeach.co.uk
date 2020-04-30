@@ -4,7 +4,7 @@ import * as Variants from "../../src/js/animationVariants";
 import React from "react";
 import { FiGithub, FiGitlab, FiLinkedin, FiSettings } from "react-icons/fi";
 import { motion } from "framer-motion";
-import Dialog from "../misc/Dialog";
+import SettingsDialog from "../misc/SettingsDialog";
 
 export default function Header() {
 	const [settingsDialogOpen, setSettingsDialogOpen] = React.useState(false);
@@ -61,19 +61,10 @@ export default function Header() {
 						</a>
 					</div>
 				</div>
-				<Dialog
+				<SettingsDialog
 					open={settingsDialogOpen}
 					onClose={() => setSettingsDialogOpen(false)}
-				>
-					<h1>Settings</h1>
-					<h2>Theme</h2>
-					<p>
-						Here you can change the accent or choose dark or light
-						mode.
-					</p>
-					<h2>About</h2>
-					<p>Version here perhaps?</p>
-				</Dialog>
+				/>
 			</motion.div>
 		</>
 	);

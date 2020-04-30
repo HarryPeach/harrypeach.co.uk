@@ -5,7 +5,6 @@
 	--foreground-text-less: rgb(200, 200, 200);
 	--foreground-text-least: rgb(110, 110, 120);
 	--background: rgb(30, 30, 30);
-	/* --background: rgb(230, 230, 230); */
 	--accent-raw: 255, 122, 122;
 	--accent: rgb(var(--accent-raw));
 

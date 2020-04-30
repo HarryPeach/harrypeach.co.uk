@@ -7,15 +7,17 @@ import { FiArrowRight } from "react-icons/fi";
 import styles from "./ProjectList.module.css";
 
 export default function ProjectList() {
-	const projectsMap = projects.map((project) => (
-		<Project
-			key={project.id}
-			id={project.id}
-			title={project.title}
-			desc={project.desc}
-			tags={project.tags}
-		/>
-	));
+	const projectsMap = projects
+		.slice(0, 3)
+		.map((project) => (
+			<Project
+				key={project.id}
+				id={project.id}
+				title={project.title}
+				desc={project.desc}
+				tags={project.tags}
+			/>
+		));
 
 	return (
 		<div className={styles.section}>

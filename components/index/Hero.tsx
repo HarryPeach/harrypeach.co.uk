@@ -12,13 +12,6 @@ export default function Header() {
 	return (
 		<>
 			<motion.div
-				className={styles.backdrop}
-				initial="hidden"
-				animate="show"
-				exit="exit"
-				variants={Variants.simpleFade}
-			></motion.div>
-			<motion.div
 				initial="hidden"
 				animate="show"
 				exit="exit"

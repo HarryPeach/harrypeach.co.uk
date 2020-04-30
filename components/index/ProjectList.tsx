@@ -17,11 +17,6 @@ export default function ProjectList() {
 		/>
 	));
 
-	const item = {
-		hidden: { opacity: 0 },
-		show: { opacity: 1 },
-	};
-
 	return (
 		<div className={styles.section}>
 			<motion.div

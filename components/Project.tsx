@@ -21,11 +21,6 @@ export default function Project({ id, tags, desc, title }: ProjectProps) {
 		);
 	});
 
-	const item = {
-		hidden: { opacity: 0 },
-		show: { opacity: 1 },
-	};
-
 	const openLink = () => {
 		Router.push("/projects/[project]", `/projects/${id}`);
 	};

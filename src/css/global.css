@@ -2,8 +2,8 @@
 :root {
 	font-weight: 400;
 	--foreground-text: rgb(255, 255, 255);
-	--foreground-text-less: rgb(200, 200, 200);
-	--foreground-text-least: rgb(110, 110, 120);
+	--foreground-text-less: rgb(210, 210, 210);
+	--foreground-text-least: rgb(160, 160, 160);
 	--background: rgb(30, 30, 30);
 	--accent-raw: 255, 122, 122;
 	--accent: rgb(var(--accent-raw));

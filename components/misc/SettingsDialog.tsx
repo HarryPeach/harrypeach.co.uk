@@ -9,6 +9,14 @@ type DialogProps = {
 };
 
 export default function Dialog({ open, onClose }: DialogProps) {
+	const themeChoices = [
+		[255, 122, 122], // Pink
+		[70, 218, 211], // Cyan
+		[138, 75, 249], // Purple
+		[66, 255, 124], // Pastel Green
+		[220, 220, 200], // Off-white
+	];
+
 	const onClickHandler = (event: React.MouseEvent) => {
 		event.preventDefault();
 		if (event.target === event.currentTarget) {
@@ -37,34 +45,25 @@ export default function Dialog({ open, onClose }: DialogProps) {
 					<h1 className={styles.title}>Settings</h1>
 					<div className={styles.content}>
 						<h2 className={styles.subtitle}>Theme</h2>
-						<div
-							className={styles.color}
-							style={{ background: "rgba(255, 122, 122)" }}
-							onClick={() => setTheme("255, 122, 122")}
-						/>
-						<div
-							className={styles.color}
-							style={{ background: "rgba(70, 218, 211)" }}
-							onClick={() => setTheme("70, 218, 211")}
-						/>
-						<div
-							className={styles.color}
-							style={{ background: "rgba(103, 58, 183)" }}
-							onClick={() => setTheme("103, 58, 183")}
-						/>
-						<div
-							className={styles.color}
-							style={{ background: "rgba(66, 255, 124)" }}
-							onClick={() => setTheme("66, 255, 124")}
-						/>
-						<div
-							className={styles.color}
-							style={{ background: "rgba(220, 220, 220)" }}
-							onClick={() => setTheme("220, 220, 220")}
-						/>
+						{themeChoices.map((theme) => (
+							<div
+								key={theme.toString()}
+								className={styles.color}
+								style={{
+									background: `rgba(${theme[0]}, ${theme[1]}, ${theme[2]})`,
+								}}
+								onClick={() =>
+									setTheme(
+										`${theme[0]}, ${theme[1]}, ${theme[2]}`
+									)
+								}
+							/>
+						))}
 					</div>
-					<h2 className={styles.subtitle}>About</h2>
-					<p>Version here perhaps?</p>
+					<div className={styles.content}>
+						<h2 className={styles.subtitle}>About</h2>
+						<p>Version x.x.x</p>
+					</div>
 				</motion.div>
 			</motion.div>
 		);

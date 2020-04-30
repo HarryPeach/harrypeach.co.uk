@@ -1,6 +1,6 @@
 .card {
 	color: var(--accent);
-	background: rgb(var(--accent-raw), 0.1);
+	background: rgb(var(--accent-raw), 0.2);
 	cursor: pointer;
 }
 
@@ -31,7 +31,7 @@
 	font-size: 0.8em;
 	color: var(--foreground-text-least);
 	text-transform: uppercase;
-	letter-spacing: .2em;
+	letter-spacing: 0.2em;
 }
 
 .tag::after {

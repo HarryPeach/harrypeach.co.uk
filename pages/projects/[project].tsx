@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Router from "next/router";
+import { FiCode, FiGlobe, FiPackage } from "react-icons/fi";
 
 import * as Variants from "../../src/js/animationVariants";
 import projects from "../../data/projects.json";
@@ -17,6 +18,9 @@ type ProjectProps = {
 		id: number;
 		tags: string[];
 		title: string;
+		sourceLink: string;
+		prodLink: string;
+		releaseLink: string;
 	};
 };
 
@@ -73,6 +77,35 @@ export default function Project({ project }: ProjectProps) {
 							></img>
 						</picture>
 						<p className={styles.content}>{project.descFull}</p>
+						<div className={styles.links}>
+							{project.sourceLink && (
+								<a
+									href={project.sourceLink}
+									className={styles.link}
+								>
+									<FiCode />
+									Source
+								</a>
+							)}
+							{project.prodLink && (
+								<a
+									href={project.prodLink}
+									className={styles.link}
+								>
+									<FiGlobe />
+									Live demo
+								</a>
+							)}
+							{project.releaseLink && (
+								<a
+									href={project.releaseLink}
+									className={styles.link}
+								>
+									<FiPackage />
+									Releases
+								</a>
+							)}
+						</div>
 					</Card>
 				</motion.div>
 			</motion.div>

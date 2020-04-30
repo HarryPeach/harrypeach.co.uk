@@ -1,5 +1,4 @@
-[
-	{
+[{
 		"id": 0,
 		"title": "bootscreennx",
 		"desc": "A website to create boot images or the Nintendo Switch",
@@ -9,7 +8,10 @@
 			"Javascript",
 			"HTML / CSS"
 		],
-		"coverImage": "/assets/images/projects/bootscreennx/cover"
+		"coverImage": "/assets/images/projects/bootscreennx/cover",
+		"prodLink": "https://harrypeach.github.io/bootscreennx/",
+		"sourceLink": "https://github.com/HarryPeach/bootscreennx",
+		"releaseLink": ""
 	},
 	{
 		"id": 1,
@@ -21,7 +23,10 @@
 			"Javascript",
 			"Python"
 		],
-		"coverImage": "/assets/images/projects/dinorunnx/cover"
+		"coverImage": "/assets/images/projects/dinorunnx/cover",
+		"prodLink": "",
+		"sourceLink": "https://github.com/HarryPeach/dinorunnx",
+		"releaseLink": "https://github.com/HarryPeach/DinoRunNX/releases"
 	},
 	{
 		"id": 2,
@@ -32,6 +37,9 @@
 			"Python",
 			"pip"
 		],
-		"coverImage": "/assets/images/projects/emojimage/cover"
+		"coverImage": "/assets/images/projects/emojimage/cover",
+		"prodLink": "",
+		"sourceLink": "https://github.com/HarryPeach/emojimage",
+		"releaseLink": "https://github.com/HarryPeach/emojimage/releases"
 	}
 ]

@@ -27,3 +27,31 @@
 	font-size: 1.2em;
 	padding: 10px;
 }
+
+.links {
+	display: flex;
+	justify-content: center;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	flex-wrap: wrap;
+}
+
+.link {
+	text-decoration: none;
+	cursor: pointer;
+	color: var(--accent);
+	padding: 20px;
+	line-height: 1.4em;
+	transition: filter 0.2s;
+}
+
+.link:hover {
+	filter: brightness(60%);
+}
+
+.link svg {
+	position: relative;
+	margin: 0 10px;
+	top: 50%;
+	transform: translate(0, -50%);
+}

@@ -1,9 +1,9 @@
-export const hero = {
+export const simpleFade = {
 	hidden: { opacity: 0 },
 	show: {
 		opacity: 1,
 		transition: {
-			duration: 1,
+			duration: 0.6,
 		},
 	},
 	exit: {

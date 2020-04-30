@@ -16,13 +16,13 @@ export default function Header() {
 				initial="hidden"
 				animate="show"
 				exit="exit"
-				variants={Variants.hero}
+				variants={Variants.simpleFade}
 			></motion.div>
 			<motion.div
 				initial="hidden"
 				animate="show"
 				exit="exit"
-				variants={Variants.hero}
+				variants={Variants.simpleFade}
 				className={styles.container}
 			>
 				<FiSettings

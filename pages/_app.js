@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 
 function handleExitComplete() {
 	if (typeof window !== "undefined") {
-		window.scrollTo({ bottom: 0 });
+		window.scrollTo(0, 0);
 	}
 }
 

@@ -17,6 +17,11 @@ export default function ProjectList() {
 		/>
 	));
 
+	const item = {
+		hidden: { opacity: 0 },
+		show: { opacity: 1 },
+	};
+
 	return (
 		<div className={styles.section}>
 			<motion.div
@@ -27,9 +32,12 @@ export default function ProjectList() {
 			>
 				<h2 className={styles.title}>Projects</h2>
 				{projectsMap}
-				<h3 className={styles.more}>
+				<motion.h3
+					className={styles.more}
+					variants={Variants.simpleFade}
+				>
 					More projects <FiArrowRight />
-				</h3>
+				</motion.h3>
 			</motion.div>
 		</div>
 	);

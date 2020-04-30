@@ -2,6 +2,7 @@ import Router from "next/router";
 import { motion } from "framer-motion";
 
 import Card from "./Card";
+import * as Variants from "../src/js/animationVariants";
 
 import styles from "./Project.module.css";
 type ProjectProps = {
@@ -30,7 +31,7 @@ export default function Project({ id, tags, desc, title }: ProjectProps) {
 	};
 
 	return (
-		<motion.div variants={item}>
+		<motion.div variants={Variants.simpleFade}>
 			<Card className={styles.card} onClick={openLink}>
 				<div className={styles.titleFlex}>
 					<h1 className={styles.title}>{title}</h1>

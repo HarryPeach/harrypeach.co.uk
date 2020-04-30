@@ -1,15 +1,11 @@
 @import url("https://rsms.me/inter/inter.css");
 :root {
 	font-weight: 400;
-	--foreground-text: rgb(20, 20, 30);
-	--foreground-text-less: rgb(80, 80, 90);
+	--foreground-text: rgb(255, 255, 255);
+	--foreground-text-less: rgb(200, 200, 200);
 	--foreground-text-least: rgb(110, 110, 120);
-	--background: linear-gradient(
-		180deg,
-		rgb(255, 255, 255) 20%,
-		rgb(245, 245, 255) 100%
-	);
-	--accent-raw: 96, 71, 204;
+	--background: rgb(20, 20, 20);
+	--accent-raw: 221, 255, 50;
 	--accent: rgb(var(--accent-raw));
 
 	color: var(--foreground-text);
@@ -23,12 +19,15 @@ html {
 html,
 body {
 	overflow: auto;
+	overflow-x: hidden;
+	position: relative;
 }
 
 html,
 body,
 #__next {
 	height: 100%;
+	width: 100%;
 	/* overflow: auto; */
 }
 
@@ -45,9 +44,9 @@ h2 {
 
 #__next {
 	min-width: 320px;
-	max-width: 820px;
+	/* max-width: 820px; */
 	margin: 0 auto;
-	padding: 10px;
+	/* padding: 10px; */
 }
 
 @supports (font-variation-settings: normal) {

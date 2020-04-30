@@ -1,5 +1,6 @@
 .section {
-	margin: 40px 0;
+	margin: 40px auto;
+	max-width: 820px;
 }
 
 .title {

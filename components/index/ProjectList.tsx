@@ -18,7 +18,7 @@ export default function ProjectList() {
 	));
 
 	return (
-		<div className="section">
+		<div className={styles.section}>
 			<motion.div
 				initial="hidden"
 				animate="show"
@@ -27,7 +27,9 @@ export default function ProjectList() {
 			>
 				<h2 className={styles.title}>Projects</h2>
 				{projectsMap}
-				<h3 className={styles.more}>More projects <FiArrowRight /></h3>
+				<h3 className={styles.more}>
+					More projects <FiArrowRight />
+				</h3>
 			</motion.div>
 		</div>
 	);

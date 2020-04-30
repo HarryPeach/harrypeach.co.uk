@@ -14,7 +14,7 @@ export default function Dialog({ open, onClose }: DialogProps) {
 		[70, 218, 211], // Cyan
 		[138, 75, 249], // Purple
 		[66, 255, 124], // Pastel Green
-		[220, 220, 200], // Off-white
+		[240, 240, 240], // Off-white
 	];
 
 	const onClickHandler = (event: React.MouseEvent) => {

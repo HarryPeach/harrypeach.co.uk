@@ -11,8 +11,6 @@
 }
 
 .container .title {
-	/* text-transform: uppercase; */
-	/* color: var(--accent); */
 	font-size: 4.5em;
 	font-weight: 800;
 	margin: 0 0 20px 0;

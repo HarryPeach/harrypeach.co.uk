@@ -2,13 +2,22 @@ import Project from "../Project";
 import projects from "../../data/projects.json";
 import * as Variants from "../../src/js/animationVariants";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 import styles from "./ProjectList.module.css";
 
-export default function ProjectList() {
+type ProjectListType = {
+	projectsToLoad: number;
+	showMore?: boolean;
+};
+
+export default function ProjectList({
+	showMore = true,
+	projectsToLoad,
+}: ProjectListType) {
 	const projectsMap = projects
-		.slice(0, 3)
+		.slice(0, projectsToLoad)
 		.map((project) => (
 			<Project
 				key={project.id}
@@ -33,7 +42,13 @@ export default function ProjectList() {
 					className={styles.more}
 					variants={Variants.simpleFade}
 				>
-					More projects <FiArrowRight />
+					{showMore && (
+						<Link href="/moreProjects">
+							<a>
+								More projects <FiArrowRight />
+							</a>
+						</Link>
+					)}
 				</motion.h3>
 			</motion.div>
 		</div>

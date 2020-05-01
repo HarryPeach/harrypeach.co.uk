@@ -21,3 +21,8 @@
 	position: absolute;
 	transform: translate(20%, 50%);
 }
+
+.more a {
+	color: inherit;
+	text-decoration: none;
+}

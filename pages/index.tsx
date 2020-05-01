@@ -17,7 +17,7 @@ export default function Index() {
 				<title>Harry Peach</title>
 			</Head>
 			<Hero />
-			<ProjectList />
+			<ProjectList projectsToLoad={3} />
 			<MyInfo />
 		</>
 	);

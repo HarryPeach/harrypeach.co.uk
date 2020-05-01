@@ -41,5 +41,32 @@
 		"prodLink": "",
 		"sourceLink": "https://github.com/HarryPeach/emojimage",
 		"releaseLink": "https://github.com/HarryPeach/emojimage/releases"
+	},
+	{
+		"id": 3,
+		"title": "harrypeach.co.uk",
+		"desc": "My personal / portfolio website, written in React and Next.js.",
+		"descFull": "Lorem reprehenderit occaecat voluptate excepteur pariatur cupidatat cupidatat proident ea voluptate. Irure esse ipsum ex nostrud proident dolor tempor labore. Id Lorem incididunt eu pariatur eu laboris consectetur. Non dolore culpa minim magna minim. Et mollit occaecat veniam sit adipisicing dolore aliqua occaecat deserunt dolore dolor. Est non consectetur sint cupidatat est esse consequat dolor labore nulla consequat.",
+		"tags": [
+			"React",
+			"Javascript"
+		],
+		"coverImage": "",
+		"prodLink": "https://harrypeach.co.uk",
+		"sourceLink": "https://github.com/HarryPeach/harrypeach.co.uk"
+	},
+	{
+		"id": 4,
+		"title": "Oslo",
+		"desc": "An open source network written in React, with a backend built on Google Firebase.",
+		"descFull": "Lorem reprehenderit occaecat voluptate excepteur pariatur cupidatat cupidatat proident ea voluptate. Irure esse ipsum ex nostrud proident dolor tempor labore. Id Lorem incididunt eu pariatur eu laboris consectetur. Non dolore culpa minim magna minim. Et mollit occaecat veniam sit adipisicing dolore aliqua occaecat deserunt dolore dolor. Est non consectetur sint cupidatat est esse consequat dolor labore nulla consequat.",
+		"tags": [
+			"React",
+			"Firebase",
+			"Javascript"
+		],
+		"coverImage": "",
+		"prodLink": "",
+		"sourceLink": "https://github.com/HarryPeach/oslo"
 	}
 ]

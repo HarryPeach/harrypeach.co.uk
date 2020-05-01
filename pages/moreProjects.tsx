@@ -32,7 +32,11 @@ export default function MoreProjects() {
 				</div>
 				<h1>All Projects</h1>
 			</motion.div>
-			<ProjectList projectsToLoad={4} showMore={false} />
+			<ProjectList
+				projectsToLoad={10}
+				showMore={false}
+				showTitle={false}
+			/>
 		</>
 	);
 }

@@ -10,9 +10,11 @@ import styles from "./ProjectList.module.css";
 type ProjectListType = {
 	projectsToLoad: number;
 	showMore?: boolean;
+	showTitle?: boolean;
 };
 
 export default function ProjectList({
+	showTitle = true,
 	showMore = true,
 	projectsToLoad,
 }: ProjectListType) {
@@ -36,7 +38,7 @@ export default function ProjectList({
 				exit="exit"
 				variants={Variants.regularItem}
 			>
-				<h2 className={styles.title}>Projects</h2>
+				{showTitle && <h2 className={styles.title}>Projects</h2>}
 				{projectsMap}
 				<motion.h3
 					className={styles.more}

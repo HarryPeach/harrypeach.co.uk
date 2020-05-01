@@ -115,11 +115,11 @@ export default function Project({ project }: ProjectProps) {
 
 export async function getStaticPaths() {
 	return {
-		paths: [
-			{ params: { project: "0" } },
-			{ params: { project: "1" } },
-			{ params: { project: "2" } },
-		],
+		paths: Array(projects.length)
+			.fill(1)
+			.map((_, i) => {
+				return { params: { project: i.toString() } };
+			}),
 		fallback: false,
 	};
 }

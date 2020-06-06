@@ -1,0 +1,42 @@
+.button {
+	border: none;
+	padding: 0;
+	font-size: 1rem;
+	cursor: pointer;
+	background: none;
+	font-weight: 700;
+	color: var(--accent);
+	/* border-bottom: 2px solid var(--accent); */
+	transition: background-size 0.4s;
+	background: linear-gradient(to right, var(--accent), var(--accent))
+		no-repeat;
+	background-size: 0% 2px;
+	background-position: left bottom;
+}
+
+.button:focus {
+	outline: none;
+}
+
+.button:hover {
+	background-size: 100% 2px;
+	/* border-bottom: 4px solid var(--accent); */
+}
+
+.button:active {
+	/* // filter: brightness(70%); */
+}
+
+.secondary {
+	border: none;
+	background: none;
+	color: var(--accent);
+}
+
+.secondary:hover {
+	background: hsla(0, 0, 0, 0.1);
+}
+
+.secondary:active {
+	background: hsla(0, 0, 0, 0.3);
+}

@@ -1,0 +1,27 @@
+.card {
+	user-select: none;
+	overflow: hidden;
+	border-radius: 5px;
+	padding: 25px;
+	margin: 20px;
+	min-height: 100px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.children {
+	flex-grow: 1;
+}
+
+.back {
+	/* position: absolute; */
+	align-self: flex-start;
+	color: var(--accent);
+	font-size: 2em;
+	cursor: pointer;
+	/* top: 20px; */
+	/* top: 5px; */
+	/* left: 5px; */
+	/* margin: 25px; */
+}

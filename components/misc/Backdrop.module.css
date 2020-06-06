@@ -1,0 +1,23 @@
+.backdrop {
+	background: hsl(0, 100%, 100%);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+}
+
+.backdrop:before {
+	content: "";
+	/* position: absolute; */
+	top: -98%;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	/* transform: skewY(-0.5deg); */
+	background: linear-gradient(90deg, hsl(300, 85%, 61%), hsl(224, 91%, 57%));
+	height: 100%;
+	opacity: 0.8;
+}

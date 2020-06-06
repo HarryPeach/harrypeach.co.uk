@@ -1,0 +1,58 @@
+.container {
+	padding: 20px;
+	position: relative;
+	z-index: 2;
+	max-width: 800px;
+	margin: 0 auto;
+	height: 50vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container .title {
+	color: var(--dark-foreground-text);
+	font-size: 4.5em;
+	font-weight: 800;
+	margin: 0 0 20px 0;
+}
+
+.container .subtitle {
+	line-height: 1.3;
+	font-weight: 700;
+	font-size: 1.4em;
+	color: var(--dark-foreground-text-less);
+}
+
+.textContent {
+	padding: 0 10px;
+}
+
+.links {
+	text-align: right;
+	padding: 10px;
+}
+
+.link {
+	padding: 5px;
+}
+
+.link a {
+	font-size: 2em;
+	text-decoration: none;
+	color: var(--accent);
+}
+
+.titleLink {
+	color: var(--accent);
+	text-decoration: none;
+}
+
+.settings {
+	font-size: 2em;
+	top: 1em;
+	right: 35px;
+	position: absolute;
+	cursor: pointer;
+	color: var(--foreground-text-less);
+}

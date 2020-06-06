@@ -1,0 +1,23 @@
+.title {
+	padding: 20px;
+	position: relative;
+	z-index: 2;
+	max-width: 800px;
+	margin: 0 auto;
+	color: var(--dark-foreground-text);
+	/* height: 30%; */
+}
+
+.title h1 {
+	padding: 10px 0;
+	margin: 0 10px;
+	font-size: 4em;
+	font-weight: 800;
+}
+
+.title svg {
+	cursor: pointer;
+	color: var(--accent);
+	margin: 20px 10px;
+	font-size: 2em;
+}

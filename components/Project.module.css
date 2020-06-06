@@ -1,9 +1,20 @@
 .card {
 	color: var(--dark-foreground-text);
-	/* background: rgb(var(--accent-raw), 0.2); */
 	background: white;
 	box-shadow: 0 5px 10px 0px #aaa;
 	cursor: pointer;
+	position: relative;
+}
+
+.accent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: white;
+	/* border: 1px solid white; */
+	background: linear-gradient(90deg, hsl(300, 85%, 61%), hsl(224, 91%, 57%));
+	height: 5px;
 }
 
 .title {

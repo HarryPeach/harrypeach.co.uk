@@ -23,7 +23,7 @@ export default function Card({
 					<FiArrowLeft />
 				</div>
 			)}
-			{children}
+			<div className={styles.children}>{children}</div>
 		</div>
 	);
 }

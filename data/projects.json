@@ -1,13 +1,10 @@
-[{
+[
+	{
 		"id": 0,
 		"title": "bootscreennx",
 		"desc": "A website to create boot images or the Nintendo Switch",
 		"descFull": "bootscreenx creates boot images for the Nintendo Switch that resemble BIOS screens from early computers. It was originally an update of a similar tool for the Nintendo 3DS, but was rewritten and improved.",
-		"tags": [
-			"Nintendo Switch",
-			"Javascript",
-			"HTML / CSS"
-		],
+		"tags": ["Nintendo Switch", "Javascript", "HTML / CSS"],
 		"coverImage": "/assets/images/projects/bootscreennx/cover",
 		"prodLink": "https://harrypeach.github.io/bootscreennx/",
 		"sourceLink": "https://github.com/HarryPeach/bootscreennx",
@@ -18,11 +15,7 @@
 		"title": "DinoRunNX",
 		"desc": "A port of the Chromium \"Dino Game\" for the Nintendo Switch",
 		"descFull": "Ea excepteur laborum ipsum ut aute excepteur esse labore laboris nulla amet. Laborum incididunt cillum elit exercitation ex aute exercitation. Ullamco amet nostrud reprehenderit eu irure velit incididunt ipsum eiusmod excepteur tempor.",
-		"tags": [
-			"React",
-			"Javascript",
-			"Python"
-		],
+		"tags": ["React", "Javascript", "Python"],
 		"coverImage": "/assets/images/projects/dinorunnx/cover",
 		"prodLink": "",
 		"sourceLink": "https://github.com/HarryPeach/dinorunnx",
@@ -33,39 +26,47 @@
 		"title": "emojimage",
 		"desc": "A python package that generates collages of emojis based on an image input",
 		"descFull": "Ea excepteur laborum ipsum ut aute excepteur esse labore laboris nulla amet. Laborum incididunt cillum elit exercitation ex aute exercitation. Ullamco amet nostrud reprehenderit eu irure velit incididunt ipsum eiusmod excepteur tempor.",
-		"tags": [
-			"Python",
-			"pip"
-		],
+		"tags": ["Python", "pip"],
 		"coverImage": "/assets/images/projects/emojimage/cover",
-		"prodLink": "",
 		"sourceLink": "https://github.com/HarryPeach/emojimage",
 		"releaseLink": "https://github.com/HarryPeach/emojimage/releases"
 	},
 	{
 		"id": 3,
+		"title": "Etta",
+		"desc": "A messenger app written in React, using Google Firebase as a backend.",
+		"descFull": "Etta is a messenger app that uses Google Firebase for all backend functionality. It was created using the Test Driven Development methodology.",
+		"tags": ["React", "Javascript", "Firebase", "HTML / CSS"],
+		"coverImage": "/assets/images/projects/etta/cover",
+		"sourceLink": "https://github.com/HarryPeach/msgr"
+	},
+	{
+		"id": 4,
 		"title": "harrypeach.co.uk",
 		"desc": "My personal / portfolio website, written in React and Next.js.",
 		"descFull": "Lorem reprehenderit occaecat voluptate excepteur pariatur cupidatat cupidatat proident ea voluptate. Irure esse ipsum ex nostrud proident dolor tempor labore. Id Lorem incididunt eu pariatur eu laboris consectetur. Non dolore culpa minim magna minim. Et mollit occaecat veniam sit adipisicing dolore aliqua occaecat deserunt dolore dolor. Est non consectetur sint cupidatat est esse consequat dolor labore nulla consequat.",
-		"tags": [
-			"React",
-			"Javascript"
-		],
+		"tags": ["React", "Javascript"],
 		"coverImage": "",
 		"prodLink": "https://harrypeach.co.uk",
 		"sourceLink": "https://github.com/HarryPeach/harrypeach.co.uk"
 	},
 	{
-		"id": 4,
+		"id": 5,
+		"title": "Kia",
+		"desc": "Simple terminal spinners for the Deno runtime",
+		"descFull": "Kia is a library that allows you to use loading spinners in terminal applications that are written using the Deno runtime. Based on the Ora library for Node.js.",
+		"tags": ["Typescript", "Deno", "TDD"],
+		"coverImage": "/assets/images/projects/kia/cover",
+		"releaseLink": "https://github.com/HarryPeach/kia/releases",
+		"sourceLink": "https://github.com/HarryPeach/kia"
+	},
+	{
+		"id": 6,
 		"title": "Oslo",
 		"desc": "An open source network written in React, with a backend built on Google Firebase.",
 		"descFull": "Lorem reprehenderit occaecat voluptate excepteur pariatur cupidatat cupidatat proident ea voluptate. Irure esse ipsum ex nostrud proident dolor tempor labore. Id Lorem incididunt eu pariatur eu laboris consectetur. Non dolore culpa minim magna minim. Et mollit occaecat veniam sit adipisicing dolore aliqua occaecat deserunt dolore dolor. Est non consectetur sint cupidatat est esse consequat dolor labore nulla consequat.",
-		"tags": [
-			"React",
-			"Firebase",
-			"Javascript"
-		],
-		"coverImage": "",
+		"tags": ["React", "Firebase", "Javascript"],
+		"coverImage": "/assets/images/projects/oslo/cover",
 		"prodLink": "",
 		"sourceLink": "https://github.com/HarryPeach/oslo"
 	}

@@ -4,6 +4,7 @@
 	z-index: 2;
 	max-width: 800px;
 	margin: 0 auto;
+	color: var(--dark-foreground-text);
 	/* height: 30%; */
 }
 

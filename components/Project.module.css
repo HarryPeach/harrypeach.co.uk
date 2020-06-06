@@ -1,6 +1,8 @@
 .card {
-	color: var(--accent);
-	background: rgb(var(--accent-raw), 0.2);
+	color: var(--dark-foreground-text);
+	/* background: rgb(var(--accent-raw), 0.2); */
+	background: white;
+	box-shadow: 0 5px 10px 0px #aaa;
 	cursor: pointer;
 }
 
@@ -29,7 +31,7 @@
 
 .tag {
 	font-size: 0.8em;
-	color: var(--foreground-text-least);
+	color: var(--dark-foreground-text-least);
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 }
@@ -41,6 +43,6 @@
 .desc {
 	font-size: 1em;
 	line-height: 1.5;
-	color: var(--foreground-text-less);
+	color: var(--dark-foreground-text-less);
 	margin: 6px 0;
 }

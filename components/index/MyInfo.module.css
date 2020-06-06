@@ -4,9 +4,11 @@
 }
 
 .title {
+	color: var(--dark-foreground-text-less);
 	padding: 10px 20px;
 }
 
 .content {
+	color: var(--dark-foreground-text-least);
 	margin: 20px;
 }

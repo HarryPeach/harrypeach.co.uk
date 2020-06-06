@@ -2,12 +2,13 @@ import "../src/css/reset.css";
 import "../src/css/global.css";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
+import Router from "next/router";
 
-function handleExitComplete() {
-	if (typeof window !== "undefined") {
-		window.scrollTo(0, 0);
-	}
-}
+// function handleExitComplete() {
+// 	if (typeof window !== "undefined") {
+// 		// window.scrollTo(0, 0);
+// 	}
+// }
 
 function MyApp({ Component, pageProps }) {
 	const router = useRouter();
@@ -15,7 +16,7 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<AnimatePresence
 				exitBeforeEnter
-				onExitComplete={handleExitComplete}
+				// onExitComplete={handleExitComplete}
 			>
 				<Component {...pageProps} key={router.route} />
 			</AnimatePresence>

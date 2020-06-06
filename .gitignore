@@ -30,3 +30,5 @@ yarn-error.log*
 .env.production.local
 
 .now
+# Local Netlify folder
+.netlify

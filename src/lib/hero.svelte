@@ -3,6 +3,7 @@
         <div id="background">
         </div>
 		<div id="content">
+            <!-- <img src="pattern.svg" alt=""> -->
 			<h1>Harry Peach</h1>
 		</div>
 	</section>
@@ -34,6 +35,15 @@
 		font-weight: 500;
         text-align: center;
 	}
+
+    /* img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        filter: hue-rotate(70deg);
+    } */
 
     ul {
         width: 80%;
@@ -76,6 +86,7 @@
 	#name {
 		justify-content: center;
 		background: rgb(255, 105, 105);
+        background: url("pattern.svg");
 	}
 
 	#list {

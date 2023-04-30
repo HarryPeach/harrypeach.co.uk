@@ -1,13 +1,16 @@
+<script lang="ts">
+    import type { Project } from "../../types/project.type";
+
+    export let project: Project;
+</script>
 <div class="container">
     <div id="image_container" />
-	<h1>Example Project</h1>
-    <p>This is an example project</p>
+	<h1>{project.name}</h1>
+    <p>{project.desc_short}</p>
     <div>
-        <div class="chip">3d</div>
-        <div class="chip">svelte</div>
-        <div class="chip">web</div>
-        <div class="chip">open</div>
-        <div class="chip">proprietary</div>
+        {#each project.tags as tag}
+            <div class="chip">{tag}</div>
+        {/each}
     </div>
 </div>
 

@@ -1,6 +1,8 @@
 import { error } from '@sveltejs/kit';
 import projects from "../../../lib/data/projects.json"
 
+import type { PageLoad } from "./$types";
+
 /** @type {import('./$types').PageLoad} */
 export function load({ params }) {
     const ids = projects.map(n => {

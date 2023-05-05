@@ -1,9 +1,9 @@
 <script lang="ts">
 	import TiArrowRight from 'svelte-icons/ti/TiArrowRight.svelte';
 	import ProjectCard from './projects/project_card.svelte';
+	import type { Project } from '../types/project.type';
 
-	// TODO: Refactor Type
-	export let projects: any;
+	export let projects: Array<Project>;
 </script>
 
 <div class="container">
@@ -13,10 +13,6 @@
 		{#each projects as project}
 			<ProjectCard project={project} />
 		{/each}
-		<!-- <ProjectCard /> -->
-		<!-- <ProjectCard /> -->
-		<!-- <ProjectCard /> -->
-		<!-- <ProjectCard /> -->
 	</section>
 	<a href="projects" id="more_projects">
 		More projects <div class="icon"><TiArrowRight /></div>
@@ -37,8 +33,8 @@
 		font-family: 'Archivo Black', sans-serif;
 		font-size: 2.5em;
 		margin: 0 40px 40px 40px;
-		width: 100%;
-		text-align: center;
+		max-width: 100%;
+		box-sizing: border-box;
 	}
 
 	#more_projects {
@@ -69,7 +65,7 @@
 		display: flex;
 		min-width: 400px;
 		box-sizing: border-box;
-		padding: 50px 50px;
+		padding: 50px;
 		font-family: 'Space Grotesk', sans-serif;
 		border-left: 2px solid black;
 		border-bottom: 2px solid black;
@@ -77,7 +73,8 @@
 		flex-direction: column;
 		align-items: stretch;
 		justify-content: center;
-		width: 100vw;
+		max-width: 100vw;
 		flex-wrap: wrap;
+		text-align: center;
 	}
 </style>

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import ProjectCard from './projects/project_card.svelte';
 </script>
 

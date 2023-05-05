@@ -1,6 +1,8 @@
-<script>
-    /** @type {import('./$types').PageData} */
-    export let data;
+<script lang="ts">
+	import type { Project } from "../../../types/project.type";
+
+    export let project: Project;
 </script>
 
-<h1>{data.name}</h1>
+<h1>{project.name}</h1>
+<h2>{project.desc_long}</h2>

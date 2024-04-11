@@ -1,0 +1,10 @@
+body {
+    max-width: 800px;
+    min-width: 320px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+}

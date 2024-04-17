@@ -1,3 +1,13 @@
+html {
+    background-image: url("./lib/assets/neb.png");
+    background-repeat: repeat;
+}
+
+html, body {
+    font-family: "Comic Neue", cursive;
+    color: white;
+}
+
 body {
     max-width: 800px;
     min-width: 320px;
@@ -7,4 +17,9 @@ body {
 
 h1 {
     font-size: 2em;
+}
+
+/* Workaround for an issue with the marquee lib */
+.marquee {
+    overflow: hidden;
 }

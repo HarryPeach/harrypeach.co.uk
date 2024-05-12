@@ -18,22 +18,30 @@
 		</div>
 	</div>
 	<div class="buttonbar">
-		<div class="nav_button" id={selected === 0 ? "selected" : ""}>
-			<img src={Home} alt="Home" />
-			<p>Home</p>
-		</div>
-        <div class="nav_button" id={selected === 1 ? "selected" : ""}>
-			<img src={About} alt="About Me" />
-			<p>About</p>
-		</div>
-        <div class="nav_button" id={selected === 2 ? "selected" : ""}>
-			<img src={Projects} alt="Projects" />
-			<p>Projects</p>
-		</div>
-        <div class="nav_button" id={selected === 3 ? "selected" : ""}>
-			<img src={Contact} alt="Contact Me" />
-			<p>Contact Me</p>
-		</div>
+        <a href="/">
+            <div class="nav_button" id={selected === 0 ? "selected" : ""}>
+                <img src={Home} alt="Home" />
+                <p>Home</p>
+            </div>
+        </a>
+        <a href="/about">
+            <div class="nav_button" id={selected === 1 ? "selected" : ""}>
+                <img src={About} alt="About Me" />
+                <p>About</p>
+            </div>
+        </a>
+        <a href="/projects">
+            <div class="nav_button" id={selected === 2 ? "selected" : ""}>
+                <img src={Projects} alt="Projects" />
+                <p>Projects</p>
+            </div>
+        </a>
+        <a href="/contact">
+            <div class="nav_button" id={selected === 3 ? "selected" : ""}>
+                <img src={Contact} alt="Contact Me" />
+                <p>Contact Me</p>
+            </div>
+        </a>
 	</div>
 	<div class="content">
         <slot />
@@ -53,6 +61,10 @@
 		border-bottom: solid 1px #888888;
 		border-right: solid 1px #888888;
 	}
+
+    a {
+        color: white;
+    }
 
 	.content {
 		margin-top: 2px;

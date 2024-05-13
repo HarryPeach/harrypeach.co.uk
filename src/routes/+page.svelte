@@ -5,19 +5,13 @@
 </script>
 
 <div class="container">
-	<Window title={'Home'} selected={0}>
-		<h1 class="title">Harry Peach</h1>
+	<Window title={'Home'} content_title={"Harry Peach"} selected={0}>
 		<Marquee>welcome to my epic website!!</Marquee>
 		<img src={UnderConstruction} alt="Under Construction" />
 	</Window>
 </div>
 
 <style>
-	.title {
-		font-size: 4em;
-		font-weight: 900;
-	}
-
 	.container {
 		margin-top: 10%;
 	}

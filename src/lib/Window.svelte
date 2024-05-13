@@ -5,6 +5,7 @@
     import Contact from "$lib/assets/icon_contact.png";
 
     export let title = "Untitled";
+	export let content_title = "";
     export let selected = -1;
 </script>
 
@@ -44,11 +45,18 @@
         </a>
 	</div>
 	<div class="content">
+		<h1 class="content-title">{content_title}</h1>
         <slot />
 	</div>
 </div>
 
 <style>
+	.content-title {
+		font-size: 4em;
+		font-weight: 900;
+		margin: .6em 0;
+	}
+
 	.window {
 		display: flex;
 		flex-direction: column;

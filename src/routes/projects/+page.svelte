@@ -3,8 +3,7 @@
 </script>
 
 <div class="container">
-	<Window title={'Projects'} selected={2}>
-		<h1 class="title">Projects</h1>
+	<Window title={'Projects'} content_title={"Projects"} selected={2}>
 	</Window>
 </div>
 

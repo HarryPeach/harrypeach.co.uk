@@ -1,6 +1,7 @@
 html {
     background-image: url("./lib/assets/neb.png");
     background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 html, body {
@@ -9,7 +10,7 @@ html, body {
 }
 
 body {
-    max-width: 800px;
+    max-width: 900px;
     min-width: 320px;
     margin: auto;
     text-align: center;
@@ -19,6 +20,14 @@ h1 {
     font-size: 2em;
 }
 
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h3 {
+    margin: 8px 0;
+}
 /* Workaround for an issue with the marquee lib */
 .marquee {
     overflow: hidden;

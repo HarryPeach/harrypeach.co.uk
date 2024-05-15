@@ -52,6 +52,7 @@
 
 <style>
 	.content-title {
+		text-align: center;
 		font-size: 4em;
 		font-weight: 900;
 		margin: .6em 0;
@@ -75,9 +76,10 @@
     }
 
 	.content {
+		text-align: left;
 		margin-top: 2px;
 		background: white;
-		padding: 8px;
+		padding: 24px;
 		color: black;
 		border-top: solid 2px #333;
 		border-left: solid 2px #333;

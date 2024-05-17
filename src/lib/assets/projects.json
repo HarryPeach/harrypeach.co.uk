@@ -1,0 +1,28 @@
+{
+    "vocational": [
+        {
+            "title": "Example Project 1",
+            "desc": "Lorem ipsum dolor set amet",
+            "cover_image": "",
+            "links": [
+                {
+                    "url": "http://example.com",
+                    "name": "GitHub"
+                }
+            ]
+        }
+    ],
+    "educational": [
+        {
+            "title": "Simplifying Terms of Service using Natural Language Processing",
+            "desc": "Lorem ipsum dolor set amet",
+            "cover_image": "",
+            "links": [
+                {
+                    "url": "http://example.com",
+                    "name": "GitHub"
+                }
+            ]
+        }
+    ]
+}

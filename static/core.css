@@ -1,6 +1,10 @@
+:root {
+    --primary-colour: rgb(255, 162, 133);
+}
+
 html,
 body {
 
     font-family: 'Bebas Neue', sans-serif;
-    background: #fadcbf;
+    background: #fff1e3;
 }

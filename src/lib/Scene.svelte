@@ -7,7 +7,6 @@
 	interactivity();
 
 	const gltf = useLoader(GLTFLoader).load('/assets/peach.glb');
-	const scale = new Spring(1);
 
 	let rotation = 0;
 	useTask((delta) => {

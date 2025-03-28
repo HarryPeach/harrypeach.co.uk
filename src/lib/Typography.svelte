@@ -29,6 +29,6 @@
 			/* Larger vertical shadow at the bottom right */ 3px 8px 0 #000000;
 	}
 	h2 {
-		font-size: 2em;
+		font-size: 2.6em;
 	}
 </style>

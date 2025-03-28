@@ -20,9 +20,8 @@
 		<div id="flex">
 			<TopBar>
 				<Button>About</Button>
-				<Button>Links</Button>
-				<Button>Contact</Button>
 				<Button>Projects</Button>
+				<Button>Contact</Button>
 			</TopBar>
 
 			<div>
@@ -30,10 +29,9 @@
 				<Typography text="Software Consultant" type="subtitle" />
 			</div>
 			<Marquee
-				>Web Design {@render gap(20)} Software Architecture {@render gap(20)} Scripting {@render gap(
-					20
-				)} Prototyping
-				{@render gap(20)} Code Review {@render gap(20)} Bespoke Programs
+				>{@render gap(20)} Web Design {@render gap(20)} Software Architecture {@render gap(20)} Scripting
+				{@render gap(20)} Prototyping
+				{@render gap(20)} Code Review {@render gap(20)} Bespoke Programs {@render gap(20)}
 			</Marquee>
 		</div>
 	</div>

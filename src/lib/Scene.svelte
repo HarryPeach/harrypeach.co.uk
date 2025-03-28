@@ -6,7 +6,7 @@
 
 	let rotation = 0;
 	useTask((delta) => {
-		rotation += delta;
+		rotation += delta * 0.48;
 	});
 </script>
 
@@ -20,7 +20,7 @@
 	/>
 	<T.AmbientLight intensity={5} />
 
-	<T.Mesh rotation.y={rotation} position.y={1} scale={3} rotation.x={-0.2} rotation.z={0.2}>
+	<T.Mesh rotation.y={rotation} position.y={1} scale={4} rotation.x={-0.2} rotation.z={0.2}>
 		{#if $gltf}
 			<T is={$gltf.scene} />
 		{/if}

@@ -44,7 +44,7 @@
 		height: 100vh;
 		width: 100vw;
 		background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.1) 0.1rem, transparent 0);
-		background-size: 1rem 1rem;
+		background-size: 1.5rem 1.5rem;
 		background-position:
 			0 0,
 			0.65rem 0.65rem;

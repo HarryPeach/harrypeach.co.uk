@@ -24,7 +24,7 @@
 />
 <T.AmbientLight intensity={5} />
 
-<T.Mesh rotation.y={rotation} position.y={1} scale={2} rotation.x={-0.2}>
+<T.Mesh rotation.y={rotation} position.y={1} scale={2} rotation.x={-0.2} rotation.z={0.2}>
 	{#if $gltf}
 		<T is={$gltf.scene} />
 	{/if}

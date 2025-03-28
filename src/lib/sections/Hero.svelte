@@ -46,6 +46,7 @@
 		background-position:
 			0 0,
 			0.65rem 0.65rem;
+		background-attachment: fixed;
 	}
 
 	#hero {

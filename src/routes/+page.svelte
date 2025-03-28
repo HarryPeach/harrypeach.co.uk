@@ -1,7 +1,8 @@
 <script>
-	import Marquee from '$lib/Marquee.svelte';
 	import { Canvas } from '@threlte/core';
 	import Scene from '$lib/Scene.svelte';
+	import Marquee from '$lib/Marquee.svelte';
+	import TopBar from '$lib/TopBar.svelte';
 </script>
 
 <Canvas id="canvas">
@@ -10,9 +11,10 @@
 
 <div id="hero">
 	<div id="flex">
-		Links and that
+		<TopBar>Luis Guzman</TopBar>
+
 		<h1 id="name_title">Harry Peach</h1>
-		<Marquee text="Example Text" speed={50} />
+		<Marquee />
 	</div>
 </div>
 

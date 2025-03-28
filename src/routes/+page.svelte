@@ -12,7 +12,7 @@
 	<div id="flex">
 		Links and that
 		<h1 id="name_title">Harry Peach</h1>
-		<Marquee />
+		<Marquee text="Example Text" speed={50} />
 	</div>
 </div>
 

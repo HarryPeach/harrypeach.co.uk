@@ -1,8 +1,25 @@
-<div class="marquee">
-	<div>
-		<span>// You spin me right round, baby. Like a record, baby. //</span>
-		<span>// I spin me right round, baby. Like a record, baby. //</span>
-	</div>
+<script>
+	let containerWidth = 0;
+	let textWidth = 0;
+
+	export let text = '';
+	export let speed = 100; // pixels per second
+
+	$: clonesNeeded =
+		textWidth > 0 && containerWidth > 0 ? Math.ceil((containerWidth * 2) / textWidth) : 0;
+
+	$: duration = textWidth > 0 ? ((textWidth * clonesNeeded) / speed) * 1000 : 0;
+</script>
+
+<div class="marquee" bind:clientWidth={containerWidth}>
+	{#if containerWidth > 0}
+		<div class="track" style="--duration: {duration}ms">
+			{#each Array(clonesNeeded) as _, i}
+				<span class="content" class:first={i === 0}>{text}</span>
+			{/each}
+		</div>
+	{/if}
+	<span class="measurer" bind:offsetWidth={textWidth}>{text}</span>
 </div>
 
 <style>
@@ -10,36 +27,38 @@
 		font-size: 1.2em;
 		height: 30px;
 		width: 100%;
-
 		background: var(--primary-colour);
 		border: 2px solid black;
-
 		overflow: hidden;
 		position: relative;
 	}
 
-	.marquee div {
-		display: block;
-		width: 200%;
-		height: 30px;
-
+	.track {
 		position: absolute;
-		overflow: hidden;
-
-		animation: marquee 15s linear infinite;
+		display: flex;
+		animation: scroll linear infinite;
+		animation-duration: var(--duration);
 	}
 
-	.marquee span {
-		float: left;
-		width: 50%;
+	.content {
+		flex-shrink: 0;
+		white-space: nowrap;
+		padding: 0 20px;
 	}
 
-	@keyframes marquee {
-		0% {
-			left: 0;
+	.measurer {
+		position: absolute;
+		visibility: hidden;
+		height: 0;
+		white-space: nowrap;
+	}
+
+	@keyframes scroll {
+		from {
+			transform: translateX(0%);
 		}
-		100% {
-			left: -100%;
+		to {
+			transform: translateX(-100%);
 		}
 	}
 </style>

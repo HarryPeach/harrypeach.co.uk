@@ -1,13 +1,12 @@
 <script>
 	import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-	import { T, useTask } from '@threlte/core';
+	import { T, useTask, useLoader } from '@threlte/core';
 	import { interactivity } from '@threlte/extras';
 	import { Spring } from 'svelte/motion';
-    import { useLoader } from '@threlte/core'
 
 	interactivity();
 
-    const gltf = useLoader(GLTFLoader).load('/assets/peach.glb')
+	const gltf = useLoader(GLTFLoader).load('/assets/peach.glb');
 	const scale = new Spring(1);
 
 	let rotation = 0;
@@ -23,18 +22,10 @@
 		ref.lookAt(0, 1, 0);
 	}}
 />
+<T.AmbientLight intensity={5} />
 
-<T.Mesh
-	rotation.y={rotation}
-	position.y={1}
-	scale={scale.current}
-	onpointerenter={() => {
-		scale.target = 1.5;
-	}}
-	onpointerleave={() => {
-		scale.target = 1;
-	}}
->
-	<T.BoxGeometry args={[1, 2, 1]} />
-	<T.MeshBasicMaterial color="hotpink" />
+<T.Mesh rotation.y={rotation} position.y={1} scale={2} rotation.x={-0.2}>
+	{#if $gltf}
+		<T is={$gltf.scene} />
+	{/if}
 </T.Mesh>

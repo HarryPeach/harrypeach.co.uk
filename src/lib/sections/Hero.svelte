@@ -7,6 +7,10 @@
 	import Typography from '$lib/Typography.svelte';
 </script>
 
+{#snippet gap(amount)}
+	<span style={'margin: 0 ' + amount + 'px'}>//</span>
+{/snippet}
+
 <div class="container">
 	<Canvas id="canvas">
 		<Scene />
@@ -25,7 +29,12 @@
 				<Typography text="Harry Peach" />
 				<Typography text="Software Consultant" type="subtitle" />
 			</div>
-			<Marquee>Software Consultant // Full-stack Engineer //</Marquee>
+			<Marquee
+				>Web Design {@render gap(20)} Software Architecture {@render gap(20)} Scripting {@render gap(
+					20
+				)} Prototyping
+				{@render gap(20)} Code Review {@render gap(20)} Bespoke Programs
+			</Marquee>
 		</div>
 	</div>
 </div>
@@ -34,7 +43,13 @@
 	.container {
 		height: 100vh;
 		width: 100vw;
+		background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.1) 0.1rem, transparent 0);
+		background-size: 1rem 1rem;
+		background-position:
+			0 0,
+			0.65rem 0.65rem;
 	}
+
 	#hero {
 		position: absolute;
 		top: 0;

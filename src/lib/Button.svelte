@@ -1,15 +1,17 @@
 <script>
-	let { children, ...rest } = $props();
+	let { children, href, ...rest } = $props();
 </script>
 
-<button {...rest}>
-	{@render children()}
-</button>
+<a {href}>
+	<button {...rest}>
+		{@render children()}
+	</button>
+</a>
 
 <style>
 	button {
 		border: 2px solid black;
-		padding: 10px;
+		padding: 5px 10px;
 		border-radius: 10px;
 		background: white;
 		cursor: pointer;

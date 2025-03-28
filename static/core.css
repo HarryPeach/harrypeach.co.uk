@@ -1,10 +1,9 @@
 :root {
     --primary-colour: rgb(255, 162, 133);
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 html,
 body {
-
-    font-family: 'Bebas Neue', sans-serif;
     background: #fff1e3;
 }

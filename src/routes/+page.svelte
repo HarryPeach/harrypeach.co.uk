@@ -3,6 +3,8 @@
 	import Scene from '$lib/Scene.svelte';
 	import Marquee from '$lib/Marquee.svelte';
 	import TopBar from '$lib/TopBar.svelte';
+	import Button from '$lib/Button.svelte';
+	import Typography from '$lib/Typography.svelte';
 </script>
 
 <Canvas id="canvas">
@@ -11,10 +13,18 @@
 
 <div id="hero">
 	<div id="flex">
-		<TopBar>Luis Guzman</TopBar>
+		<TopBar>
+			<Button>About</Button>
+			<Button>Links</Button>
+			<Button>Contact</Button>
+			<Button>Projects</Button>
+		</TopBar>
 
-		<h1 id="name_title">Harry Peach</h1>
-		<Marquee />
+		<div>
+			<Typography text="Harry Peach" />
+			<Typography text="Software Consultant" type="subtitle" />
+		</div>
+		<Marquee>Software Consultant // Full-stack Engineer //</Marquee>
 	</div>
 </div>
 
@@ -34,21 +44,5 @@
 		justify-content: space-between;
 		align-items: center;
 		height: 100%;
-	}
-
-	#name_title {
-		font-size: 8em;
-		color: var(--primary-colour);
-		text-shadow: 
-    /* Diagonal shadow for top-left corner */
-			-3px -3px 0 #000000,
-			/* Diagonal shadow for top-right corner */ 3px -3px 0 #000000,
-			/* Diagonal shadow for bottom-left corner */ -3px 3px 0 #000000,
-			/* Diagonal shadow for bottom-right corner */ 3px 3px 0 #000000,
-			/* Horizontal shadow on the left side */ -3px 0 0 #000000,
-			/* Horizontal shadow on the right side */ 3px 0 0 #000000,
-			/* Vertical shadow on the top */ 0 -3px 0 #000000,
-			/* Larger vertical shadow at the bottom left */ -3px 8px 0 #000000,
-			/* Larger vertical shadow at the bottom right */ 3px 8px 0 #000000;
 	}
 </style>

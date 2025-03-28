@@ -1,9 +1,10 @@
 <script>
 	import Marquee from 'svelte-fast-marquee';
+	let { children } = $props();
 </script>
 
 <div class="marquee">
-	<Marquee>I can be a Svelte component, multiple Svelte components, or just some text.</Marquee>
+	<Marquee>{@render children()}</Marquee>
 </div>
 
 <style>

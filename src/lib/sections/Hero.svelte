@@ -19,9 +19,9 @@
 	<div id="hero">
 		<div id="flex">
 			<TopBar>
-				<Button href="#">About</Button>
-				<Button href="#">Projects</Button>
-				<Button href="#">Contact</Button>
+				<Button href="#about">About</Button>
+				<Button href="#projects">Projects</Button>
+				<Button href="#contact">Contact</Button>
 			</TopBar>
 
 			<div>

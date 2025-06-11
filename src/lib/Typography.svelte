@@ -15,7 +15,7 @@
 		font-family: 'Chewy', sans-serif;
 	}
 	h1 {
-		font-size: 20vmin;
+		font-size: 16vmin;
 		margin: 0.15em;
 		paint-order: stroke fill;
 		-webkit-text-stroke: 20px #000;

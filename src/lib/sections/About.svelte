@@ -1,4 +1,4 @@
-<div class="container">TODO: About</div>
+<div class="container" id="about">TODO: About</div>
 
 <style>
 	.container {

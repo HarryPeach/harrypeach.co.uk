@@ -10,26 +10,17 @@
 	});
 </script>
 
-<div class="container">
-	<T.PerspectiveCamera
-		makeDefault
-		position={[10, 10, 10]}
-		oncreate={(ref) => {
-			ref.lookAt(0, 1, 0);
-		}}
-	/>
-	<T.AmbientLight intensity={5} />
+<T.PerspectiveCamera
+	makeDefault
+	position={[10, 10, 10]}
+	oncreate={(ref) => {
+		ref.lookAt(0, 1, 0);
+	}}
+/>
+<T.AmbientLight intensity={5} />
 
-	<T.Mesh rotation.y={rotation} position.y={1} scale={4} rotation.x={-0.2} rotation.z={0.2}>
-		{#if $gltf}
-			<T is={$gltf.scene} />
-		{/if}
-	</T.Mesh>
-</div>
-
-<style>
-	.container {
-		height: 100vh;
-		width: 100vw;
-	}
-</style>
+<T.Mesh rotation.y={rotation} position.y={1} scale={4} rotation.x={-0.2} rotation.z={0.2}>
+	{#if $gltf}
+		<T is={$gltf.scene} />
+	{/if}
+</T.Mesh>

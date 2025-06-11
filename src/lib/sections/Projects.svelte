@@ -3,7 +3,7 @@
 <style>
 	.container {
 		height: 100vh;
-		width: 100vw;
+		width: 100%;
 		background: green;
 	}
 </style>

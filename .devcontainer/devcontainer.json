@@ -11,7 +11,8 @@
 		"vscode": {
 			"extensions": [
 				"svelte.svelte-vscode",
-				"codeandstuff.package-json-upgrade"
+				"codeandstuff.package-json-upgrade",
+				"jacobcassidy.css-nesting-syntax-highlighting"
 			]
 		}
 	}

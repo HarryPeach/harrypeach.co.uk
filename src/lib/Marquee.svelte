@@ -10,10 +10,11 @@
 <style>
 	.marquee {
 		font-size: 1.2em;
-		height: 30px;
-		width: 100%;
-		background: var(--primary-colour);
-		border: 2px solid black;
+		height: 3em;
+		line-height: 3em;
+		background: var(--colour-tertiary-container);
+		color: var(--colour-on-tertiary-container);
+		border-radius: 12px;
 	}
 
 	@keyframes scroll {

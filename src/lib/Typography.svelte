@@ -1,32 +1,23 @@
 <script>
-	let { type = 'title', text } = $props();
+	let { type = 'title', text, color = undefined } = $props();
 </script>
 
 {#if type == 'title'}
-	<h1>{text}</h1>
+	<h1 style="color: {color ? color : 'white'}">{text}</h1>
 {:else if type == 'subtitle'}
-	<h2>{text}</h2>
+	<h2 style="color: {color}">{text}</h2>
 {/if}
 
 <style>
 	h1,
 	h2 {
 		margin: 0;
+		font-family: 'Chewy', sans-serif;
 	}
 	h1 {
 		font-size: 8em;
-		color: var(--primary-colour);
-		text-shadow: 
-            /* Diagonal shadow for top-left corner */
-			-3px -3px 0 #000000,
-			/* Diagonal shadow for top-right corner */ 3px -3px 0 #000000,
-			/* Diagonal shadow for bottom-left corner */ -3px 3px 0 #000000,
-			/* Diagonal shadow for bottom-right corner */ 3px 3px 0 #000000,
-			/* Horizontal shadow on the left side */ -3px 0 0 #000000,
-			/* Horizontal shadow on the right side */ 3px 0 0 #000000,
-			/* Vertical shadow on the top */ 0 -3px 0 #000000,
-			/* Larger vertical shadow at the bottom left */ -3px 8px 0 #000000,
-			/* Larger vertical shadow at the bottom right */ 3px 8px 0 #000000;
+		paint-order: stroke fill;
+		-webkit-text-stroke: 20px #000;
 	}
 	h2 {
 		font-size: 2.6em;

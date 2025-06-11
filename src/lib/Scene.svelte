@@ -1,7 +1,6 @@
 <script>
 	import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 	import { T, useTask, useLoader } from '@threlte/core';
-	import { interactivity } from '@threlte/extras';
 
 	const gltf = useLoader(GLTFLoader).load('/assets/peach.glb');
 

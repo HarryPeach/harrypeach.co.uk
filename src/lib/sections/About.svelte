@@ -18,6 +18,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		padding: 20px;
 
 		.content {
 			background: red;
@@ -26,12 +27,12 @@
 			width: 800px;
 			height: 400px;
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			grid-template-columns: 1fr 2fr;
+			grid-template-rows: 1fr;
 
 			.card {
 				padding: 20px;
 				border-radius: 24px;
-				border: 1px dotted black;
 			}
 
 			.image {
@@ -41,8 +42,12 @@
 				background-size: cover;
 			}
 		}
-		.content > div:nth-child(2) {
-			grid-column: span 2;
+		@media (max-width: 768px) {
+			/* adjust breakpoint as needed */
+			.content {
+				grid-template-columns: 1fr;
+				grid-template-rows: 2fr 1fr;
+			}
 		}
 	}
 </style>

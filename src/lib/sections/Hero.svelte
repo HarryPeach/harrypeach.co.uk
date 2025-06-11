@@ -7,26 +7,31 @@
 	import Typography from '$lib/Typography.svelte';
 </script>
 
-{#snippet gap(amount)}
+{#snippet gap(/** @type {number} */ amount)}
 	<span style={'margin: 0 ' + amount + 'px'}>//</span>
 {/snippet}
 
 <div class="container">
-	<Canvas id="canvas">
+	<Canvas>
 		<Scene />
 	</Canvas>
 
 	<div id="hero">
 		<div id="flex">
 			<TopBar>
-				<Button>About</Button>
-				<Button>Projects</Button>
-				<Button>Contact</Button>
+				<Button href="#">About</Button>
+				<Button href="#">Projects</Button>
+				<Button href="#">Contact</Button>
 			</TopBar>
 
 			<div>
 				<Typography text="Harry Peach" />
-				<Typography text="Software Consultant" type="subtitle" />
+				<Typography
+					text="Software Consultant"
+					type="subtitle"
+					color="white"
+					style="paint-order: stroke fill; -webkit-text-stroke: 5px black;"
+				/>
 			</div>
 			<Marquee
 				>{@render gap(20)} Web Design {@render gap(20)} Software Architecture {@render gap(20)} Scripting

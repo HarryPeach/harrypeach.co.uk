@@ -2,6 +2,14 @@
 	let { children, dotted = false } = $props();
 </script>
 
+<!--
+@component
+# HeadlineCard
+A full size page card that is used to hold content within a section.
+
+## Props
+- `dotted`: If true, the card will have a dotted background pattern.
+-->
 <div class="headline-card {dotted ? 'dotted' : ''}">
 	{@render children()}
 </div>

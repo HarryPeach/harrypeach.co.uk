@@ -2,6 +2,13 @@
 	let { children } = $props();
 </script>
 
+<!--
+@component
+# Side Bar
+Used on desktop / wide screen environments to provide a vertical navigation bar on the left side of the screen.
+
+Passes through all children, but intended to be used with `BarElement` components.
+-->
 <div class="sidebar">
 	{@render children()}
 </div>

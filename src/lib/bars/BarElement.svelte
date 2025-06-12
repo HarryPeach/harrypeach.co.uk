@@ -2,6 +2,14 @@
 	let { children, text, selected = false } = $props();
 </script>
 
+<!--
+@component
+# Bar Element
+An element used for a specific item in either a TopBar or SideBar.
+
+## Props
+- `selected`: If true, element will be highlighted as selected.
+-->
 <div class="element {selected ? 'selected' : ''}">
 	<div class="icon">
 		{@render children()}

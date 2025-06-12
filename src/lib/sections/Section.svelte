@@ -2,12 +2,17 @@
 	let { children } = $props();
 </script>
 
-<div class="backing-card">
+<!--
+@component
+# Section
+This component provides a semantic section for grouping content, as well as styling a full page area for any content.
+-->
+<section class="section">
 	{@render children()}
-</div>
+</section>
 
 <style>
-	.backing-card {
+	.section {
 		height: 100%;
 		width: 100%;
 		display: flex;

@@ -1,9 +1,11 @@
-<div class="container" id="contact">TODO: Contact</div>
+<script>
+	import HeadlineCard from '$lib/cards/HeadlineCard.svelte';
+	import Typography from '$lib/Typography.svelte';
+	import Section from './Section.svelte';
+</script>
 
-<style>
-	.container {
-		height: 100vh;
-		width: 100%;
-		background: blue;
-	}
-</style>
+<Section>
+	<HeadlineCard>
+		<Typography type="title" text="Contact" color="var(--colour-on-surface)" />
+	</HeadlineCard>
+</Section>

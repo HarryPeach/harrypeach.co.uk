@@ -4,6 +4,7 @@
 	import Marquee from '$lib/Marquee.svelte';
 	import Typography from '$lib/Typography.svelte';
 	import Section from '$lib/sections/Section.svelte';
+	import HeadlineCard from '$lib/cards/HeadlineCard.svelte';
 </script>
 
 {#snippet gap(/** @type {number} */ amount)}
@@ -11,7 +12,7 @@
 {/snippet}
 
 <Section>
-	<div id="window">
+	<HeadlineCard dotted>
 		<div id="peach">
 			<Canvas>
 				<Scene />
@@ -26,7 +27,7 @@
 				style="paint-order: stroke fill; -webkit-text-stroke: 5px black;"
 			/>
 		</div>
-	</div>
+	</HeadlineCard>
 
 	<Marquee
 		>{@render gap(20)} Web Design {@render gap(20)} Software Architecture {@render gap(20)} Scripting
@@ -50,24 +51,5 @@
 		justify-content: center;
 		z-index: 1;
 		height: 100%;
-	}
-	#window {
-		position: relative;
-
-		box-sizing: border-box;
-		height: 100%;
-		flex: 2;
-
-		background: var(--colour-surface-container);
-		border-radius: var(--units-corner-radius);
-		background-image: radial-gradient(
-			circle at center,
-			var(--colour-outline-variant) 0.1rem,
-			transparent 0
-		);
-		background-size: 1.5rem 1.5rem;
-		background-position:
-			0 0,
-			0.65rem 0.65rem;
 	}
 </style>

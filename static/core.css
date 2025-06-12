@@ -48,6 +48,10 @@
     --colour-surface-container: rgb(255 233 227);
     --colour-surface-container-high: rgb(255 226 218);
     --colour-surface-container-highest: rgb(249 220 213);
+
+    --units-corner-radius: 48px;
+    --units-spacing: 20px;
+
     font-family: 'Outfit', sans-serif;
 }
 

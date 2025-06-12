@@ -19,7 +19,7 @@
 		padding: 0 10px;
 		font-size: 1.4em;
 
-		border-radius: 0 24px 24px 0;
+		border-radius: 0 var(--units-corner-radius) var(--units-corner-radius) 0;
 		margin: 20px 0;
 		height: calc(100% - 40px);
 	}

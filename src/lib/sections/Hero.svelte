@@ -3,13 +3,14 @@
 	import Scene from '$lib/Scene.svelte';
 	import Marquee from '$lib/Marquee.svelte';
 	import Typography from '$lib/Typography.svelte';
+	import Section from '$lib/sections/Section.svelte';
 </script>
 
 {#snippet gap(/** @type {number} */ amount)}
 	<span style={'margin: 0 ' + amount + 'px'}>//</span>
 {/snippet}
 
-<div class="container">
+<Section>
 	<div id="window">
 		<div id="peach">
 			<Canvas>
@@ -32,48 +33,36 @@
 		{@render gap(20)} Prototyping
 		{@render gap(20)} Code Review {@render gap(20)} Bespoke Programs {@render gap(20)}
 	</Marquee>
-</div>
+</Section>
 
 <style>
-	.container {
-		height: 100vh;
+	#peach {
+		position: absolute;
 		width: 100%;
-		display: flex;
-		box-sizing: border-box;
-		row-gap: 20px;
-		column-gap: 20px;
-		padding: 20px;
-		flex-direction: column;
-		justify-content: space-between;
+		height: 100%;
 	}
 
+	#text {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+		height: 100%;
+	}
 	#window {
 		position: relative;
-		#peach {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-		}
-
-		#text {
-			display: flex;
-			flex-direction: column;
-			position: relative;
-			align-items: center;
-			justify-content: center;
-			z-index: 1;
-			height: 100%;
-		}
 
 		box-sizing: border-box;
 		height: 100%;
 		flex: 2;
 
-		background: var(--colour-surface-container-highest);
-		border-radius: 24px;
+		background: var(--colour-surface-container);
+		border-radius: var(--units-corner-radius);
 		background-image: radial-gradient(
 			circle at center,
-			var(--colour-inverse-on-surface) 0.1rem,
+			var(--colour-outline-variant) 0.1rem,
 			transparent 0
 		);
 		background-size: 1.5rem 1.5rem;

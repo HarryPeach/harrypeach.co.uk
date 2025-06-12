@@ -12,7 +12,8 @@
 			"extensions": [
 				"svelte.svelte-vscode",
 				"codeandstuff.package-json-upgrade",
-				"jacobcassidy.css-nesting-syntax-highlighting"
+				"jacobcassidy.css-nesting-syntax-highlighting",
+				"unthrottled.doki-theme"
 			]
 		}
 	}
